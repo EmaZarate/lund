@@ -1,0 +1,3 @@
+﻿DROP MASTER KEY  
+
+DROP DATABASE SCOPED CREDENTIAL ElasticQueryIdentityCred  

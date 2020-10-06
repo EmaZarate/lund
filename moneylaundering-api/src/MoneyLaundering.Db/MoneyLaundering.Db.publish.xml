@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>MoneyLaundering</TargetDatabaseName>
+    <DeployScriptFileName>MoneyLaundering.Db.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=mssql-legacy-7nqjv2hn20.database.windows.net,1433;Persist Security Info=True;User ID=MoneyLaundering-user-dev;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
+    <BlockOnPossibleDataLoss>False</BlockOnPossibleDataLoss>
+    <GenerateSmartDefaults>True</GenerateSmartDefaults>
+    <IncludeTransactionalScripts>True</IncludeTransactionalScripts>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <IgnoreColumnOrder>True</IgnoreColumnOrder>
+    <DoNotDropUsers>True</DoNotDropUsers>
+    <DoNotDropRules>True</DoNotDropRules>
+    <DoNotDropApplicationRoles>True</DoNotDropApplicationRoles>
+    <DoNotDropDatabaseRoles>True</DoNotDropDatabaseRoles>
+    <DoNotDropServerRoles>True</DoNotDropServerRoles>
+    <DoNotDropRoleMembership>True</DoNotDropRoleMembership>
+    <DoNotDropServerRoleMembership>True</DoNotDropServerRoleMembership>
+    <DoNotDropPermissions>True</DoNotDropPermissions>
+    <DoNotDropDatabaseScopedCredentials>True</DoNotDropDatabaseScopedCredentials>
+    <DoNotDropLinkedServerLogins>True</DoNotDropLinkedServerLogins>
+    <DoNotDropLogins>True</DoNotDropLogins>
+    <DoNotDropSignatures>True</DoNotDropSignatures>
+    <DoNotDropPartitionSchemes>True</DoNotDropPartitionSchemes>
+    <DoNotDropServerAuditSpecifications>True</DoNotDropServerAuditSpecifications>
+    <DoNotDropDatabaseAuditSpecifications>True</DoNotDropDatabaseAuditSpecifications>
+    <DoNotDropAssemblies>True</DoNotDropAssemblies>
+    <DoNotDropRemoteServiceBindings>True</DoNotDropRemoteServiceBindings>
+    <DoNotDropSecurityPolicies>True</DoNotDropSecurityPolicies>
+    <DoNotDropServerTriggers>True</DoNotDropServerTriggers>
+    <DoNotDropDatabaseTriggers>False</DoNotDropDatabaseTriggers>
+    <DoNotDropCredentials>True</DoNotDropCredentials>
+    <DoNotDropXmlSchemaCollections>False</DoNotDropXmlSchemaCollections>
+    <DoNotDropQueues>False</DoNotDropQueues>
+    <DoNotDropCertificates>True</DoNotDropCertificates>
+    <DoNotDropAudits>True</DoNotDropAudits>
+    <DoNotDropExternalDataSources>True</DoNotDropExternalDataSources>
+    <DoNotDropExternalTables>True</DoNotDropExternalTables>
+  </PropertyGroup>
+</Project>

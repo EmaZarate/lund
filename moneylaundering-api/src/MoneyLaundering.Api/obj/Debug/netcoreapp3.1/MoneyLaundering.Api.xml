@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoneyLaundering.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MoneyLaundering.Api.Crosscutting.Globalization.Message">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.ActivityNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontro la actividad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.BussinessUnitNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron unidades de negocio.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantAlertRecovery">
+            <summary>
+              Looks up a localized string similar to No se pudieron recuperar las alertas.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantRegisterNews">
+            <summary>
+              Looks up a localized string similar to No se pudo registrar la novedad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantSaveNews">
+            <summary>
+              Looks up a localized string similar to No se pudo guardar la novedad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantUpdateCase">
+            <summary>
+              Looks up a localized string similar to No se pudo actualizar el caso.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantUpdateNewsDocument">
+            <summary>
+              Looks up a localized string similar to No se pudo actualizar el documento en las novedades.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantUpdateNewsMail">
+            <summary>
+              Looks up a localized string similar to No se pudo actualizar el mail para la novedad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CantUpdatePersonBusinessUnit">
+            <summary>
+              Looks up a localized string similar to No se pudo guardar la unidad de negocio.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CaseGroupNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron grupos de casos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CaseNotFound">
+            <summary>
+              Looks up a localized string similar to Caso no encontrado.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CasesNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron casos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.CaseTypeNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron tipos de casos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.DocumentInGrayList">
+            <summary>
+              Looks up a localized string similar to Documento incluido en lista gris.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.DocumentInMultipleCases">
+            <summary>
+              Looks up a localized string similar to Documento vinculado a varios casos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.DocumentLetterTypeNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontro el tipo de carta.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.DocumentNotFound">
+            <summary>
+              Looks up a localized string similar to Documento no encontrado.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.GrayListDocumentNotSaved">
+            <summary>
+              Looks up a localized string similar to No se pudo vincular el documento a la persona en lista gris.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.GrayListPersonNotSaved">
+            <summary>
+              Looks up a localized string similar to No se pudo guardar la persona en lista gris.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.LocationsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron localidades.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.MailTypeNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontro el tipo de mail.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsDocumentsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraton documentos para la novedad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsMailsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron mails para la novedad.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron novedades.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsNotFoundInCase">
+            <summary>
+              Looks up a localized string similar to No se encontraron novedades en el caso.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsReasonsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron motivos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.NewsTypeNotFound">
+            <summary>
+              Looks up a localized string similar to Tipo de novedad no encontrado.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.PersonsNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron personas.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.RiskNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron riesgos.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.StatesNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron estados.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.StatusNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron estados de caso.
+            </summary>
+        </member>
+        <member name="P:MoneyLaundering.Api.Crosscutting.Globalization.Message.VehiclesNotFound">
+            <summary>
+              Looks up a localized string similar to No se encontraron vehiculos.
+            </summary>
+        </member>
+        <member name="M:MoneyLaundering.Api.Swagger.DefaultDI.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds Swagger.
+            </summary>
+            <param name="services">The services.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

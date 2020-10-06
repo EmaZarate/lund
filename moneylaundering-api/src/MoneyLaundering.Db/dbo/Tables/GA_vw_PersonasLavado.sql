@@ -1,0 +1,40 @@
+﻿
+CREATE TABLE [dbo].[GA_vw_PersonasLavado](
+	[CodUnidadNegocio] [smallint] NULL,
+	[ClaveAutomatica] [varchar](8000) NULL,
+	[TipoDocumento] [varchar](50) NULL,
+	[DocumentoNro] [varchar](50) NULL,
+	[Apellido] [varchar](300) NULL,
+	[Nombre] [varchar](300) NULL,
+	[FechaNacimiento] [date] NULL,
+	[EstadoCivil] [varchar](50) NULL,
+	[TipoPersona] [varchar](50) NULL,
+	[Sexo] [char](1) NULL,
+	[NroSocio] [varchar](100) NULL,
+	[CodigoPostal] [int] NULL,
+	[Direccion] [varchar](300) NULL,
+	[Localidad] [varchar](150) NULL,
+	[Provincia] [varchar](150) NULL,
+	[CorreoE] [varchar](300) NULL,
+	[Telefono] [varchar](50) NULL,
+	[PaisResidencia] [varchar](150) NULL,
+	[Nacionalidad] [varchar](150) NULL,
+	[ActividadAFIP] [varchar](50) NULL,
+	[DescripcionActividadAFIP] [varchar](150) NULL,
+	[Antiguedad] [varchar](19) NOT NULL,
+	[SujetoObligado] [varchar](50) NULL,
+	[EsPEP] [bit] NULL,
+	[Patente] [varchar](50) NOT NULL,
+	[AñoFabricacion] [varchar](20) NOT NULL,
+	[MarcaModelo] [varchar](500) NOT NULL,
+	[Categoria] [varchar](150) NOT NULL,
+	[NivelRiesgoActual] [smallint] NULL,
+	[PerfilFinanciero] [money] NULL,
+	[EsBeneficiarioTercero] [int] NOT NULL,
+	[FechaRegistracion] [int] NULL,
+	[NumeroRegistracion] [int] NULL,
+	[FechaActualizacion] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+

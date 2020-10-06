@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>MoneyLaundering.Db</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{af3fcab4-8975-453b-841a-c137df7fe806}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>MoneyLaundering.Db</RootNamespace>
+    <AssemblyName>MoneyLaundering.Db</AssemblyName>
+    <ModelCollation>3082,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Modern_Spanish_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\MoneyLaundering.Api\Deployment\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\MoneyLaundering.Api\Deployment\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Security" />
+    <Folder Include="Security\Users" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="fwk" />
+    <Folder Include="dbo\Scripts" />
+    <Folder Include="dbo\Scripts\PostDeployment" />
+    <Folder Include="fwk\Tables" />
+    <Folder Include="Security\Schema" />
+    <Folder Include="dbo\View" />
+    <Folder Include="dbo\Tables External" />
+    <Folder Include="dbo\Tables External\Data" />
+    <Folder Include="dbo\Linked Server" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Stored Procedures\master.dbo.sp_generate_merge.sql" />
+    <Build Include="dbo\Tables\Activity.sql" />
+    <Build Include="dbo\Tables\ActivityRisk.sql" />
+    <Build Include="dbo\Tables\Antiquity.sql" />
+    <Build Include="dbo\Tables\Branch.sql" />
+    <Build Include="dbo\Tables\BranchOffice.sql" />
+    <Build Include="dbo\Tables\BusinessUnit.sql" />
+    <Build Include="dbo\Tables\Case.sql" />
+    <Build Include="dbo\Tables\CaseDocument.sql" />
+    <Build Include="dbo\Tables\CaseGroup.sql" />
+    <Build Include="dbo\Tables\CaseType.sql" />
+    <Build Include="dbo\Tables\CaseVehicle.sql" />
+    <Build Include="dbo\Tables\CategoryCost.sql" />
+    <Build Include="dbo\Tables\Channel.sql" />
+    <Build Include="dbo\Tables\ChannelRisk.sql" />
+    <Build Include="dbo\Tables\Country.sql" />
+    <Build Include="dbo\Tables\CoverageType.sql" />
+    <Build Include="dbo\Tables\Document.sql" />
+    <Build Include="dbo\Tables\DocumentLetterType.sql" />
+    <Build Include="dbo\Tables\DocumentType.sql" />
+    <Build Include="dbo\Tables\DocumentVersion.sql" />
+    <Build Include="dbo\Tables\FinancialProfilesDefault.sql" />
+    <Build Include="dbo\Tables\FinancialProfilesDefaultLog.sql" />
+    <Build Include="dbo\Tables\GrayList.sql" />
+    <Build Include="dbo\Tables\GrayListDocument.sql" />
+    <Build Include="dbo\Tables\LimitAccumulatedClaimsCharged.sql" />
+    <Build Include="dbo\Tables\LimitAccumulatedPremium.sql" />
+    <Build Include="dbo\Tables\LimitAssuredSum.sql" />
+    <Build Include="dbo\Tables\LimitRefund.sql" />
+    <Build Include="dbo\Tables\Location.sql" />
+    <Build Include="dbo\Tables\LocationRisk.sql" />
+    <Build Include="dbo\Tables\Mailtype.sql" />
+    <Build Include="dbo\Tables\MessageType.sql" />
+    <Build Include="dbo\Tables\News.sql" />
+    <Build Include="dbo\Tables\NewsDocument.sql" />
+    <Build Include="dbo\Tables\NewsMail.sql" />
+    <Build Include="dbo\Tables\NewsReason.sql" />
+    <Build Include="dbo\Tables\NewsReasonType.sql" />
+    <Build Include="dbo\Tables\NewsRiskChange.sql" />
+    <Build Include="dbo\Tables\NewsType.sql" />
+    <Build Include="dbo\Tables\OperatedVolume.sql" />
+    <Build Include="dbo\Tables\PaymentMode.sql" />
+    <Build Include="dbo\Tables\PaymentModeRisk.sql" />
+    <Build Include="dbo\Tables\Person.sql" />
+    <Build Include="dbo\Tables\PersonBusinessUnit.sql" />
+    <Build Include="dbo\Tables\PersonWareHouse.sql" />
+    <Build Include="dbo\Tables\PolicyType.sql" />
+    <Build Include="dbo\Tables\Processes.sql" />
+    <Build Include="dbo\Tables\ProcessesLog.sql" />
+    <Build Include="dbo\Tables\ProductRisk.sql" />
+    <Build Include="dbo\Tables\Producer.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\RiskAssignmentRanges.sql" />
+    <Build Include="dbo\Tables\RiskAssignmentRangesLog.sql" />
+    <Build Include="dbo\Tables\Setting.sql" />
+    <Build Include="dbo\Tables\SettingLog.sql" />
+    <Build Include="dbo\Tables\State.sql" />
+    <Build Include="dbo\Tables\Status.sql" />
+    <Build Include="dbo\Tables\UserProfile.sql" />
+    <Build Include="dbo\Tables\UseType.sql" />
+    <Build Include="dbo\Tables\Vehicle.sql" />
+    <Build Include="fwk\Tables\Table.sql" />
+    <Build Include="dbo\Tables\Risk.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Risk.sql" />
+    <Build Include="dbo\Functions\GetLasNewsByCaseID.sql" />
+    <Build Include="dbo\Tables\Number.sql" />
+    <Build Include="dbo\Stored Procedures\GetNumber.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Number.sql" />
+    <None Include="dbo\Tables External\Users.sql" />
+    <None Include="dbo\Tables External\Roles.sql" />
+    <None Include="dbo\Tables External\UserRoles.sql" />
+    <None Include="dbo\Tables External\Data\CreateExternalData.sql" />
+    <None Include="dbo\Tables External\Data\MasterKey.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_BI.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_Casos.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_LegajosVencidos.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_Log.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_PepClientes.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_PepOtros.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_Personas.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_SujetosObligados.sql" />
+    <None Include="dbo\Stored Procedures\spAlertRecovery_Transfer.sql" />
+    <None Include="dbo\Stored Procedures\spGetWebServices.sql" />
+    <None Include="dbo\Stored Procedures\spHTTPRequest.sql" />
+    <None Include="dbo\Stored Procedures\spWS_GetPEP.sql" />
+    <None Include="dbo\Stored Procedures\spWS_GetSO.sql" />
+    <Build Include="dbo\Tables\GA_vw_NovedadesAlertasLavado.sql" />
+    <Build Include="dbo\Tables\GA_vw_NovedadesAlertasVehiculosLavado.sql" />
+    <Build Include="dbo\Tables\GA_vw_PersonasLavado.sql" />
+    <Build Include="dbo\Tables\AlertRecoveryLog.sql" />
+    <None Include="dbo\Linked Server\DESA.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="dbo\Scripts\Script.PostDeployment.sql" />
+    <Build Include="Security\Schema\fwk.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Producer.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Activity.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.BranchOffice.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Location.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.State.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.PersonBusinessUnit.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Case.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.GrayList.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Users\fwk.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.BusinessUnit.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Country.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.Person.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.NewsReasonType.sql" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.News.sql" />
+    <None Include="MoneyLaundering.Db.publish.xml" />
+    <None Include="MoneyLaundering.Db.local.publish.xml" />
+    <None Include="dbo\Scripts\PostDeployment\dbo.DocumentLetterType.sql" />
+    <None Include="dbo\Tables External\Data\DropCredencial.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.CaseGroup.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.CaseType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.DocumentType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.MailType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.MessageType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.NewsType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.Processes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.Setting.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Scripts\PostDeployment\dbo.Status.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="MoneyLaundering.Db.refactorlog" />
+  </ItemGroup>
+  <!--
+  <ItemGroup>
+    <SqlCmdVariable Include="DataBase">
+      <DefaultValue>Identity</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="Password">
+      <DefaultValue>sWVre0tcymyebtrh1y</DefaultValue>
+      <Value>$(SqlCmdVar__4)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="Secret">
+      <DefaultValue>sWVre0tcymyebtrh1y</DefaultValue>
+      <Value>$(SqlCmdVar__3)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="Server">
+      <DefaultValue>mssql-legacy-7nqjv2hn20.database.windows.net</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="UserName">
+      <DefaultValue>mssql-legacy-dev-user</DefaultValue>
+      <Value>$(SqlCmdVar__5)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>-->
+</Project>

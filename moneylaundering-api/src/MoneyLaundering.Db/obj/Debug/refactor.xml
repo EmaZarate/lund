@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="9365d329-d0bb-493b-a296-8bd8d4840c49" ChangeDateTime="02/12/2020 12:05:17" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[FinancialProfilesDefaultLog].[FinantialProfile]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FinancialProfilesDefaultLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinancialProfile" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="030707a2-5d9f-4367-8d3a-c6dc9582d009" ChangeDateTime="02/17/2020 19:22:51" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PersonBusinessUnit].[FinatialProfile]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PersonBusinessUnit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FinancialProfile" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b469e449-83fe-4bbd-8c29-97f73dbe08c5" ChangeDateTime="04/02/2020 19:43:47" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[DocumentVersion].[DocumentVersionTypeId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DocumentVersion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DocumentVersionId" />
+  </Operation>
+</Operations>

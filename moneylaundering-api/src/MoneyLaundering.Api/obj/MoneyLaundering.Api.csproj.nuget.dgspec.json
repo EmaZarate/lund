@@ -1,0 +1,234 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api\\MoneyLaundering.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\MoneyLaundering.Api.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\MoneyLaundering.Api.Dto.csproj",
+        "projectName": "MoneyLaundering.Api.Dto",
+        "projectPath": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\MoneyLaundering.Api.Dto.csproj",
+        "packagesPath": "C:\\Users\\ezarate\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ezarate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sancristobalctd.pkgs.visualstudio.com/_packaging/gruposancristobal/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api\\MoneyLaundering.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api\\MoneyLaundering.Api.csproj",
+        "projectName": "MoneyLaundering.Api",
+        "projectPath": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api\\MoneyLaundering.Api.csproj",
+        "packagesPath": "C:\\Users\\ezarate\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ezarate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sancristobalctd.pkgs.visualstudio.com/_packaging/gruposancristobal/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\MoneyLaundering.Api.Dto.csproj": {
+                "projectPath": "C:\\Users\\ezarate\\Documents\\Emanuel\\Repositorios\\GSC-PrevencionLavado-SC\\moneylaundering-api\\src\\MoneyLaundering.Api.Dto\\MoneyLaundering.Api.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "noWarn": [
+            "NU1701"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AspNetCore.HealthChecks.AzureKeyVault": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "AspNetCore.HealthChecks.AzureStorage": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.4.2, )"
+            },
+            "Dynamsoft.DotNet.Barcode": {
+              "target": "Package",
+              "version": "[7.2.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "Identity.Api.Sdk.Lib": {
+              "target": "Package",
+              "version": "[1.200730.1011, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "Microsoft.Azure.KeyVault": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Configuration.AzureKeyVault": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Logging.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.13.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

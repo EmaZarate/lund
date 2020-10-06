@@ -1,0 +1,10 @@
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api\Deployment\MoneyLaundering.Db.dacpac
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api\Deployment\MoneyLaundering.Db.dll
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api\Deployment\MoneyLaundering.Db.pdb
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\MoneyLaundering.Db.sqlprojAssemblyReference.cache
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\MoneyLaundering.Db.dll
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\MoneyLaundering.Db.pdb
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\Model.xml
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\refactor.xml
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\postdeploy.sql
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Db\obj\Debug\predeploy.sql

@@ -1,0 +1,11 @@
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\bin\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.deps.json
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\bin\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.dll
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\bin\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.pdb
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\bin\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.xml
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.csproj.CoreCompileInputs.cache
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.AssemblyInfoInputs.cache
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.AssemblyInfo.cs
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.dll
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.xml
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.pdb
+C:\Users\ezarate\Documents\Emanuel\Repositorios\GSC-PrevencionLavado-SC\moneylaundering-api\src\MoneyLaundering.Api.Dto\obj\Debug\netcoreapp3.1\MoneyLaundering.Api.Dto.csprojAssemblyReference.cache

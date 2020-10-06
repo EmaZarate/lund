@@ -1,0 +1,2 @@
+﻿CREATE USER [fwk] WITHOUT LOGIN
+    WITH DEFAULT_SCHEMA = [fwk];
