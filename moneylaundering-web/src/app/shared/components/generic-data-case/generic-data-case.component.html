@@ -1,0 +1,87 @@
+    <form [formGroup]="form" class="select-spacing">
+    <div class="flex-container margin-top">     
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Canal"></sc-title>
+            <p *ngIf="case">{{ case.businessUnit.producers.length > 0 ? case.businessUnit.producers[0].id : '-'}} -
+                {{ case.businessUnit.producers.length > 0 ? case.businessUnit.producers[0].produceName : '-' }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Unidad de Negocio"></sc-title>
+            <p *ngIf="case">{{ case.businessUnit.id }} - {{ case.businessUnit.description }}</p>
+        </div>
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Tipo de Alerta"></sc-title>
+            <p *ngIf="case">{{ case.caseType.description }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Fecha"></sc-title>
+            <p *ngIf="case">{{ case.createDate | date:'dd/MM/yyyy' }}</p>
+        </div>
+    </div>
+    <div class="flex-container margin-top">
+        <!-- <div class="flex-column-50">
+            <sc-title type="h3" content="Valoración"></sc-title>
+            <p *ngIf="case">{{ case.value  }}</p>
+        </div> -->
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Sucursal"></sc-title>
+            <p *ngIf="case">{{ case.branchOffice.id }} - {{ case.branchOffice.description }}</p>
+        </div>
+        <div class="flex-column-50" *ngIf="isNewCase">
+            <sc-title type="h3" content="Valoración"></sc-title>
+            <p *ngIf="case">{{ case.value }}</p>
+        </div>
+        <div class="flex-column-50" *ngIf="!isNewCase">
+            <sc-title type="h3" content="Estado"></sc-title>
+            <p *ngIf="case ">{{ case.status.description }}</p>
+        </div>
+    
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-50 padding-right-2" *ngIf="!isNewCase">
+            <sc-title type="h3" content="Analista asignado"></sc-title>
+            <p *ngIf="!isReAssigningAnalyst && case">{{ case.analyst != null ? case.analyst.firstName +" "+ case.analyst.lastName : "--"}}</p>
+            <sc-select 
+                *ngIf="isReAssigningAnalyst && analyst" 
+                [placeholder]="'Seleccione un analista'" 
+                [items]="analyst"
+                [objectKey]="'userId'"
+                [objectValue]="'fullName'"
+                formControlName="analystItems">
+            </sc-select>
+        </div>
+        <div class="flex-column-50" *ngIf="!isNewCase && !isChangingExpiration">
+            <sc-title type="h3" content="Vencimiento de Estado" ></sc-title>
+            <p *ngIf="case">
+                {{ case.newsList.length == 0 ? '' : case.newsList[case?.newsList.length -1].expirationDate | date:'dd/MM/yyyy' }}
+            </p>
+        </div>
+        <div class="flex-column-50" *ngIf="!isNewCase && isChangingExpiration">     
+            <sc-title type="h3" content="Nueva Fecha"></sc-title>
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker"  [min]="tomorrowdate" [value]="case?.newsList[case?.newsList.length -1].expirationDate" formControlName="newexpiration">
+                <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+    <!-- <div class="flex-container margin-top justify-left">
+        <div class="flex-column-50" *ngIf="!isNewCase && isFalsePossitive">
+            <sc-title type="h3" content="Falso Positivo"></sc-title>
+            <div class="margin-top">
+                <sc-checkbox formControlName="falsepossitive"></sc-checkbox>
+            </div>
+        </div>
+    </div> -->
+    <div class="flex-container margin-top">
+        <div class="flex-column-100">
+            <sc-title type="h3" content="Datos adicionales del caso"></sc-title>
+            <p *ngIf="case">{{ case.comment }}</p>
+        </div>
+    </div>
+
+    
+    <br/>
+    </form>

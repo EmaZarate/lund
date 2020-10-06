@@ -1,0 +1,39 @@
+<form [formGroup]="personForm">
+    <div class="padding-1">
+        <app-title-component [title]="'Administración de Personas - Edición'"></app-title-component> 
+        <div class="flex-column-100">
+            <sc-title type="h3" content="Unidad de Negocios"></sc-title>
+            <p>{{this.personBusinessUnit.businessUnit.description}} </p>           
+        </div>
+        <sc-title type="h3" content="Perfil transaccional"></sc-title>
+        <div class="flex-container justify-left align-items">
+            <div class="flex-column-50">
+            <input formControlName="financialProfile" type="number" min="1"  oninput="validity.valid||(value='')||(value<0);"/> 
+            </div>
+            <div class="padding-left-1">
+                <span>SMVM</span>                    
+            </div>
+        </div>
+        <div class="margin-top">
+            <sc-title type="h3" content="Riesgo Calculado"></sc-title>
+            <p >{{itemRiskCalcDesc}}</p>           
+        </div>
+        <div class="margin-top" >
+            <sc-title type="h3" content="Riesgo Asignado"></sc-title> 
+                <div class="flex-container justify-left align-items">
+                    <div class="flex-column-50">
+                        <sc-select 
+                        placeholder="Nivel de Riesgo" 
+                        formControlName="riskSelect" 
+                        [items]="itemsRisk"
+                        >
+                        </sc-select>            
+                    </div>
+                </div>   
+            <div class="buttonsContainer margin-top-max">
+                <sc-button class="padding-right-1" (onClick)="onAccept()">Grabar</sc-button>
+                <sc-button type="secondary" (onClick)="onCancel()">Cancelar</sc-button>
+            </div>
+        </div>
+    </div>
+</form>

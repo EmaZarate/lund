@@ -1,0 +1,227 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@sc/portal.fe.lib.global-styles/src/_globals.scss";
+@import "@sc/portal.fe.lib.global-styles/src/_base.scss";
+@import "./assets/scss/variables.scss";
+@import "./assets/scss/reset.scss";
+
+/* Main styles */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Flexbox display */ 
+
+.flex-container {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+  flex-flow: row wrap;
+}  
+
+.flex-column-100{
+  display: block;
+  width: 100%;
+}  
+
+.flex-column-33 {
+  display: block;
+  width: 33.33%;
+}
+
+.flex-column-50{
+  display: block;
+  width: 50%;
+}  
+
+.width-25 {
+  width: 40% !important;
+}
+
+.align-items {
+  align-items: center;
+}  
+
+.align-bottom {
+  align-items: flex-end !important;
+}  
+
+.flex-column-display {
+  flex-direction: column !important;
+}  
+
+.justify-left {
+  justify-content: flex-start !important;
+}  
+
+/* Flex button class */
+
+.buttonsContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}  
+
+.menuSelected{
+  background-color: lightblue;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}  
+
+.sc-button {
+  border-radius: 20px;
+  height: auto; // sc-button uses a height: 40px
+  min-height: 40px;
+  transition: background 150ms ease-in;
+}  
+
+/* Margins */
+
+.margin-top {
+  margin-top: 0.75rem;
+}  
+
+.margin-top-max{
+  margin-top: 3rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}  
+
+/* Paddings */
+
+.padding-left-2 {
+  padding-left: 2rem;
+}  
+
+.padding-left-1 {
+  padding-left: 1rem;
+}  
+
+.padding-right-2 {
+  padding-right: 2rem;
+}  
+
+.padding-right-1 {
+  padding-right: 1rem;
+}  
+
+.padding-1 {
+  padding: 1rem;
+}  
+
+.padding-05 {
+  padding: 0.5rem;
+}  
+
+.padding-4 {
+  padding: 4rem 2rem;
+}
+
+.padding-8 {
+  padding: 8rem 2rem;
+}
+
+.padding-9 {
+  padding: 9rem 2rem;
+}
+
+/* Background color */
+
+.backRed{
+  background-color: rgb(248, 203, 172);
+}  
+
+.backGreen{
+  background-color: rgb(198, 224, 177);
+}  
+
+.backYellow{
+   background-color: rgb(255, 230, 153);
+}   
+
+/* Media query */
+
+@media (min-width: 1152px)
+{
+    .container{
+        max-width: 100%!important;
+        padding: 0px 10px!important;
+    }    
+}
+
+/* Alignment */
+
+.text-center {
+  text-align: center;
+}
+
+/* Custom styles / default changes */
+
+.form-control-error{
+  margin-top: 0px!important;
+}  
+  
+.td:nth-child(8){
+  text-align: right;
+}  
+
+.rightAlignTDGridAC td:nth-child(9){
+  text-align: right;
+ 
+}  
+.sc-form-control-error {
+  min-height: 0!important;
+}  
+
+
+/* Grid modifications*/
+
+.sc-grid__table-cell {
+  padding: 0 8px !important;
+  text-align: center;
+}
+
+.sc-grid__table__row-header__head {
+  padding: 0 10px !important;
+  text-align: center;
+}
+
+.sc-context-menu {
+  position: absolute;
+  min-width: 240px;
+  left: 2rem !important;
+  right: 0 !important;
+  top: 10px;
+  z-index: 10;
+}
+
+th {
+  vertical-align: baseline !important;
+}
+
+/* Modal modifications */ 
+
+.menuSelected{
+  background-color: lightblue;
+}
+
+
+.sc-modal {
+  min-height: 100px !important;
+}
+
+/* Gradient */
+
+.gradient { 
+  background: linear-gradient(to right, #025499, white); 
+  padding-left: 0.2rem;
+}
+

@@ -1,0 +1,40 @@
+<div class="padding-1"> 
+  <app-title-component [title]="'Administración de Personas'"></app-title-component>
+  <div class="flex-container justify-left margin-top" >
+    <sc-filter-box class="padding-05" (apply)="getFilteredList()" (delete)="gridUnFilter()" >
+      <form [formGroup]="personForm">
+        <sc-checkbox formControlName="allbusinessunit" [isReadOnly]="false">Mostrar información de todos los negocios</sc-checkbox>
+        <hr/>         
+        <sc-select label="Orden" placeholder="Orden" formControlName="orderSelect" [items]="orderItem"></sc-select>
+        <br/><hr/><br/>
+        <sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="number"></sc-input>
+        <sc-input label="Nombre" placeholder="Nombre" formControlName="fullName" type="text"></sc-input>
+        <sc-select 
+          label="Nivel de Riesgo" 
+          placeholder="Nivel de Riesgo" 
+          formControlName="riskSelect" 
+          [items]="riskItem"
+          [objectKey]="'id'"
+          [objectValue]="'description'"
+          ></sc-select>
+        <sc-input label="Perfil Transaccional Desde" placeholder="Perfil Transaccional Desde" formControlName="tranBefore" type="number"></sc-input>
+        <sc-input label="Perfil Transaccional Hasta" placeholder="Perfil Transaccional Hasta" formControlName="tranAfter" type="number"></sc-input>
+      </form>
+    </sc-filter-box>
+    <sc-button class="padding-05" type="secondary" (onClick)="modalExport.open()">Exportar</sc-button>
+  </div>
+  <sc-grid class="margin-top" [settings]="settings" [source]="person" summary="Listado de personas"></sc-grid>
+  <app-empty-data *ngIf="personJson.length == 0"  [title]="'No se encontraron personas para esta unidad de negocio'"></app-empty-data>
+  <sc-modal title="Exportar" #modalExport [closeButton]="false">
+    <p class="gradient sc-color-white"><b>Exportar Grilla</b></p>
+    <p>Seleccione el formato</p>
+    <div class="flex-container">
+      <sc-button type="secondary" class="padding-05" (onClick)="gridExport('CSV')">CSV</sc-button>
+      <sc-button type="secondary" class="padding-05" (onClick)="gridExport('XLS')">XLS</sc-button>
+      <sc-button type="secondary" class="padding-05" (onClick)="modalExport.close()">Cancelar</sc-button>
+    </div>
+  </sc-modal>
+  <div class="margin-top">
+    <sc-pagination [itemsPageOptions]="itemsPerPage" [rowsLength]="totalLength" (paginationInfo)="onPageChange($event)"></sc-pagination>
+  </div>
+</div>

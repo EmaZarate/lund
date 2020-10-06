@@ -1,0 +1,25 @@
+<!-- <div id="notfound" class="body-background">
+    <div class="notfound">
+      <div class="notfound-404">
+        <h1>Lo sentimos</h1>
+      </div>
+      <h2>El correo electrónico que has introducido no coincide con ninguna cuenta.</h2>
+      <p>Por favor pongase en contacto con el administrador para obtener sus credenciales. <a [routerLink]="['/login']">Volver a intentarlo</a></p>
+    </div>
+  </div> -->
+
+<!-- <div class="container"><sc-empty-table-message title="Lo sentimos" message="No pudimos recuperar tus pólizas"></sc-empty-table-message></div> -->
+  
+
+  <!-- <div class="container"><sc-empty-table-message title="Lo sentimos" message="No pudimos recuperar tus pólizas"></sc-empty-table-message></div> -->
+  <div class="flex-container">
+    <div class="container">
+      <sc-empty-table-message
+        title="Algo salió mal"
+        message="No se pudo ingresar con la cuenta ingresada"
+        imageSrc="./assets/images/unknown-error.svg"
+        [showButton]="true"
+        (retry)="redirectLogin()"
+        ></sc-empty-table-message></div>
+  </div>
+  

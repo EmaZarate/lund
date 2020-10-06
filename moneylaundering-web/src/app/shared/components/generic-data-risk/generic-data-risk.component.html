@@ -1,0 +1,10 @@
+<div class="flex-container margin-top">
+    <div class="flex-column-50" *ngIf="case" >
+        <sc-title type="h3" content="Número"></sc-title>
+        <p>{{ case.caseNumber }}</p>
+    </div>
+    <div class="flex-column-50" *ngIf="case" >
+        <sc-title type="h3" content="Riesgo"></sc-title>
+        <p>{{ case.risk.description }}</p>
+    </div>
+</div>

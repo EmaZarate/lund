@@ -1,0 +1,12 @@
+<div class="full-layout-container">
+  <div class="menu-bar">
+    <sc-navbar logo="/assets/images/logo-main_nav_desktop.svg" mobileLogo="/assets/images/logo-main_nav_mobile.svg"
+      [mainMenu]="menu" (isMobileMenuOpen)="onMenuToggle($event)" (itemClicked)="onItemClicked($event.id)">`,>
+    </sc-navbar>
+  </div>
+  <main class="section-content gutters sc-scroll-bar">
+    <app-select-businessunit></app-select-businessunit>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+<sc-lateral-menu></sc-lateral-menu>

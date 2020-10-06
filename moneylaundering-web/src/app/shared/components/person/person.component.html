@@ -1,0 +1,57 @@
+<sc-title type="h3" content="Persona"></sc-title>
+<div class="box">
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Identificación"></sc-title>
+            <p>{{ person.id }} - {{ person.firstName }} {{ person.lastName }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="CUIT"></sc-title>
+            <p>{{ person.cuit }}</p>
+        </div>
+    </div>
+    <div  class="flex-container margin-top">
+        <div *ngIf="!show" class="flex-column-50">
+            <sc-title  type="h3" content="Unidad de Negocio de Origen"></sc-title>
+            <p>{{ person.personBusinessUnits.length > 0 ? businessUnit : '- - -'}}</p>
+        </div>
+        <div *ngIf="show" class="flex-column-50">
+            <sc-title  type="h3" content="Riesgo"></sc-title>  
+            <p>{{ person.personBusinessUnits.length > 0 ? personBusinessUnitRisk : '- - -'}}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Tipo"></sc-title>
+            <p>{{ person.personType.toString().toUpperCase() === 'H' ? 'Humana': person.personType.toString().toUpperCase() === 'J' ? 'Jurídica': '- - -' }}</p>
+        </div>
+        
+       
+        
+    </div>
+    <div   class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title *ngIf="show" type="h3" content="Perfil Transaccional"></sc-title>
+            <p *ngIf="show">{{ person.personBusinessUnits.length > 0 ? personBusinessUnitFinancialProfile : '- - -'}}</p>
+        </div>
+        <div *ngIf="show" class="flex-column-50">
+            
+        </div>
+        <div class="flex-column-50">
+            
+        </div>
+    </div>
+    <div>
+        <form [formGroup]="formGroup">
+            <sc-checkbox formControlName="checkboxGreyList" [isReadOnly]="true">Lista Gris</sc-checkbox>
+            <sc-checkbox formControlName="checkboxPep" [isReadOnly]="true">PEP</sc-checkbox>
+            <sc-checkbox formControlName="checkboxTerrorist" [isReadOnly]="true">Terrorista</sc-checkbox>
+            <sc-checkbox formControlName="checkboxThird" [isReadOnly]="true">Tercero</sc-checkbox>
+            <sc-checkbox formControlName="checkboxGroup" [isReadOnly]="true">Agrupador</sc-checkbox>
+            <sc-checkbox formControlName="checkboxDuplicate" [isReadOnly]="true">Duplicado</sc-checkbox>
+
+        </form>
+    </div>
+    
+    <div class="button">
+        <sc-button (onClick)="handleButtonClick()" *ngIf="show">Consultar detalles</sc-button>
+    </div>
+</div>

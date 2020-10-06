@@ -1,0 +1,16 @@
+<div class="container margin-top">
+    <app-title-component [title]="'Agregar Personas a la Unificación'"></app-title-component><br />
+    <sc-filter-box (apply)="gridFilter()" (delete)="gridUnFilter()">
+        <form [formGroup]="form">
+            <sc-input label="Apellido" placeholder="Apellido" formControlName="surname" type="text"></sc-input>
+            <sc-input label="Nombre" placeholder="Nombre" formControlName="firstname" type="text"></sc-input>
+            <sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text"></sc-input>
+        </form>
+    </sc-filter-box>
+    <sc-grid class="margin-top" #grid [settings]="settings" [source]="people"></sc-grid>
+    <app-empty-data *ngIf="peopleJson.length === 0"  [title]="'Ingrese un filtro para agregar personas a la unificación'"></app-empty-data>
+    <div class="container-bottom">
+        <sc-button class="margin-buttom" type="primary" (onClick)="add()">Aceptar</sc-button>
+        <sc-button class="margin-buttom" type="secondary" (onClick)="cancel()">Cancelar</sc-button>
+    </div>
+</div>

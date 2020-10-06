@@ -1,0 +1,14 @@
+<div class="flex-container padding-1 align-items justify-left">
+    <div class="padding-right-1">
+        <span>Unidad de negocio:</span>
+    </div>
+    <div style="flex-grow: 1;">
+        <form [formGroup]="businessUnitForm">   
+             <sc-select    
+                [isDisabled]="businessUnitReadonly"
+                [items]="businessUnitItems"
+                formControlName="businessUnitSelect">
+            </sc-select> 
+        </form>
+    </div>
+</div>

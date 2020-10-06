@@ -1,0 +1,15 @@
+<form *ngIf="canSeeLegajo" [formGroup]="form" class="margin-top">                          
+    <sc-radio-group formControlName="radioLegajo">
+            <div class="flex-container margin-top" style="justify-items: baseline;">
+                <div class="flex-column-33 padding-05">
+                    <sc-radio-item [value]="1" [isReadOnly]="isRO">Actualización de Legajo Indeterminada</sc-radio-item>
+                </div>
+                <div class="flex-column-33 padding-05">
+                    <sc-radio-item [value]="2" [isReadOnly]="isRO">Actualiza Legajo</sc-radio-item>
+                </div>
+                <div class="flex-column-33 padding-05">
+                    <sc-radio-item [value]="3" [isReadOnly]="isRO">No Actualiza Lejajo</sc-radio-item>
+                </div>
+            </div>
+    </sc-radio-group>
+</form>

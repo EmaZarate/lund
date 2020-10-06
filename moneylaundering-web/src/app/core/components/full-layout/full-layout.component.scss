@@ -1,0 +1,43 @@
+@import "@sc/portal.fe.lib.global-styles/src/_globals.scss";
+@import "../../../../assets/scss/variables.scss";
+
+$navbar-height: 54px;
+
+:host {
+  display: block;
+  overflow-x: hidden; // Needed to hide the lateral-menu on the right side
+  position: relative; // Needed to position the lateral-menu
+}
+
+.full-layout-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.section-content {
+  padding-bottom: $desktop-main-content-padding;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.mock-mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+  
+  :host {
+    min-height: 100%;
+  }
+
+  .full-layout-container {
+    flex-direction: column;
+    overflow: auto;
+  }
+  
+  .section-content {
+    padding-bottom: $mobile-main-content-padding;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="margin-top">
+        <div class="buttonsContainer">
+                <sc-button *ngIf="show && !isNewDocumentOpen" type="secondary" (onClick)="newDocument()">Nuevo documento</sc-button>
+                <sc-button *ngIf="showLink" type="secondary" (onClick)="linkDocument()">Vincular</sc-button>
+        </div>
+        <div>
+                <app-upload-new-document 
+                        (newDocumentEmit)="addDocumentEmit($event)" 
+                        (newVersionDocumentEmit)="newVersionDocumentEmit($event)" 
+                        (cancelEmit)="cancelDocument($event)" 
+                        [caseID]="caseID" 
+                        [personID]="personID" 
+                        [document]="document" 
+                        [ngStyle]="{'display':isNewDocumentOpen ? 'block' : 'none' }">
+                </app-upload-new-document>
+        </div>
+        <div class="margin-top" [ngStyle]="{'display':!isNewDocumentOpen ? 'block' : 'none' }">
+                <sc-title type="h3" class="sc-color-primary-brand" content="Documentos Adjuntos"></sc-title>
+                <sc-grid *ngIf="documents"  [settings]="settings" [source]="documents" summary="Listado de casos"></sc-grid>
+                <app-empty-data 
+                        *ngIf="documentsList.length === 0"  
+                        [title]="'No se encontraron adjuntos para este caso'"
+                        [sizeBig]="false"
+                        >
+                </app-empty-data>
+        </div>
+</div>

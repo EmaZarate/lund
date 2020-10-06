@@ -1,0 +1,42 @@
+  <div class="padding-1" *ngIf="cases"> 
+    
+    <app-title-component [title]="'Asignación de analista'"></app-title-component>
+    <div class="flex-container justify-left margin-top">
+      <sc-filter-box (apply)="gridFilter()" (delete)="gridUnFilter()" class="padding-05">
+        <form [formGroup]="caseForm">
+          <sc-input label="Número de Caso" placeholder="Número de Caso" formControlName="caseNumber" type="number"></sc-input>
+        </form>
+      </sc-filter-box>
+      <sc-button 
+        type="secondary" 
+        class="padding-05" 
+        (onClick)= "modalConfirm.open()"
+        [disabled]="!canTakeCases"
+        >Tomar Casos
+      </sc-button>
+      <sc-button type="secondary" class="padding-05" (onClick)="modalExport.open()">Exportar</sc-button>
+    </div>
+
+    <sc-grid class="margin-top" #grid [settings]="gridSettings" [source]="cases"></sc-grid>
+    <app-empty-data *ngIf="caseJson.length === 0" [title]="'No se encontraron casos para esta unidad de negocio'"></app-empty-data>
+    <sc-modal title="Tomar Casos" #modalConfirm [closeButton]="false">
+      <p class="gradient sc-color-white"><b>Tomar Casos</b></p>
+      <p *ngIf="selectedCount >= 2" >¿Está seguro de que quiere tomar los casos seleccionados?</p>
+      <p *ngIf="selectedCount == 1" >¿Está seguro de que quiere tomar el caso seleccionado?</p>
+      <div class="flex-container">
+        <sc-button type="primary" class="padding-05" (onClick)="takeCases()">Aceptar</sc-button>
+        <sc-button type="secondary" class="padding-05" (onClick)="modalConfirm.close()">Cancelar</sc-button>
+      </div>
+    </sc-modal>
+
+    <sc-modal title="Exportar" #modalExport [closeButton]="false">
+      <p class="gradient sc-color-white"><b>Exportar Grilla</b></p>
+      <p>Seleccione el formato</p>
+      <div class="flex-container">
+        <sc-button type="secondary" class="padding-05" (onClick)="gridExport('CSV')">CSV</sc-button>
+        <sc-button type="secondary" class="padding-05" (onClick)="gridExport('XLS')">XLS</sc-button>
+        <sc-button type="secondary" class="padding-05" (onClick)="modalExport.close()">Cancelar</sc-button>
+      </div>
+    </sc-modal>
+
+  </div>

@@ -1,0 +1,106 @@
+<form [formGroup]="form" class="select-spacing">
+
+<div class="flex-container margin-top" >
+    <div class="flex-column-100">
+        <sc-title type="h3" class="sc-color-primary-brand" content="Requerimiento"></sc-title>
+        <p>Canal de comunicación</p>   
+    </div>
+    <div class="flex-column-100">        
+        <sc-radio-group formControlName="channel">
+            <sc-radio-item value="1" class="radio">Email</sc-radio-item>
+            <sc-radio-item value="2" class="radio">Carta Documento</sc-radio-item>
+            <sc-radio-item value="3" class="radio">Telefónica</sc-radio-item>
+        </sc-radio-group>       
+    </div>
+    <div *ngIf="isEmailType">
+    <div class="flex-column-100"> 
+        <sc-title type="h3" content="Tipo de Mail"></sc-title>
+        <sc-select
+        formControlName="emailType"
+        [items]="itemsEmailType"
+        placeholder="Seleccioná un item"
+        objectKey="id"
+        objectValue="description"
+
+        >
+    </sc-select>
+
+    </div>
+    <div class="flex-column-100" style="display: inline-block;" > 
+        <sc-title type="h3" content="Dirección"></sc-title>
+        <sc-input formControlName="email" [value]="itemEmail.email"></sc-input>
+    </div>
+    <div class="flex-column-100"> 
+        <sc-title type="h3" content="Asunto"></sc-title>
+        <sc-input formControlName="subject" [value]="itemEmail.subject"></sc-input>
+
+    </div>
+    <div class="flex-column-100"> 
+        <sc-title type="h3" content="Mensaje"></sc-title>
+        <sc-textarea formControlName="message"></sc-textarea>
+
+    </div>
+    </div>
+            
+    <div class="flex-column-100" *ngIf="itemsVehicles">    
+        <sc-grid [settings]="settings2"  [source]="itemsVehicles"></sc-grid>              
+    </div>
+
+    <div *ngIf="isLetterType">
+        <div class="flex-column-100"> 
+            <sc-title type="h3" content="Tipo de Carta Documento"></sc-title>
+                <sc-select
+                formControlName="letterType"
+                [items]="itemsLetterType"
+                placeholder="Seleccioná un item"
+                objectKey="id"
+                objectValue="description"        
+                >
+            </sc-select>
+        </div>
+        <div class="flex-column-100" style="display: inline-block;" > 
+            <sc-title type="h3" content="Nombre"></sc-title>
+            <sc-input *ngIf="case" formControlName="name" ></sc-input>
+        </div>
+        <div class="flex-column-100"> 
+            <sc-title type="h3" content="Dirección"></sc-title>
+        
+            <sc-input formControlName="address" [value]="case.person.address"></sc-input>
+    
+        </div>
+        <div class="flex-column-100"> 
+            <sc-title type="h3" content="Provincia"></sc-title>
+            <sc-select
+                formControlName="states"
+                [items]="itemsStates"
+                placeholder="Seleccioná un item"   
+                objectKey="stateId"
+                objectValue="description"                  
+                >
+            </sc-select>
+        </div>
+
+        <div class="flex-column-100"> 
+            <sc-title type="h3" content="Localidad"></sc-title>
+            <sc-select
+            formControlName="cities"
+            [items]="itemsCities"
+            placeholder="Seleccioná un item"    
+            objectKey="locationId"
+            objectValue="description"     
+            >
+            </sc-select>
+        </div>
+    
+     
+        <div class="flex-column-100"> 
+            <button *ngIf="show" (click)="modal1.open()" class="sc-button sc-button--primary">Seleccionar Direcciones de Duplicados</button>
+            <sc-modal title="Titulo modal 1" #modal1>                
+                    <sc-grid [settings]="settings"  [source]="itemsDuplicatesObs" (rowClicked) = "onClick($event)"></sc-grid>              
+                </sc-modal>
+        </div>
+
+    </div>
+   
+</div>    
+</form>

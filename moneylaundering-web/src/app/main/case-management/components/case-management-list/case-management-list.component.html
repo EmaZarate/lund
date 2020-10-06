@@ -1,0 +1,43 @@
+
+<div class="padding-1" *ngIf="cases"> 
+    <app-title-component [title]="'Administración de casos'"></app-title-component>
+    <div class="flex-container justify-left margin-top">
+        <sc-filter-box class="padding-05" [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0">
+            <form [formGroup]="caseForm">     
+                <sc-checkbox formControlName="allbusinessunit" [isReadOnly]="false">Mostrar información de todos los negocios</sc-checkbox>
+                <hr/>    
+                <sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" ></sc-input>
+                <sc-input label="Apellido Cliente" placeholder="Apellido Cliente" formControlName="surname" type="text"  ></sc-input>
+                <sc-input label="Nombre Cliente" placeholder="Nombre Cliente" formControlName="firstname" type="text" ></sc-input>
+                <sc-input label="Número de Caso" placeholder="Número de Caso" formControlName="case" type="number" ></sc-input>
+                <sc-select label="Analista" formControlName="analist" [items]="analistItems" objectKey="id" placeholder="Analista"></sc-select>
+                <p>Nivel de Riesgo</p>
+                <sc-checkbox *ngFor="let risk of risks" [formControlName]="'risk'+risk.id">{{risk.description}}</sc-checkbox>
+                <div class="marginButtonCheckbox"></div>
+                <sc-select label="Tipo de Estado" formControlName="stateType" [items]="stateTypeItems" objectKey="id" placeholder="Tipo de Estado"></sc-select>
+                <p>Estado</p>
+                <sc-checkbox *ngFor="let statusItem of statusesItems" [formControlName]="'status'+statusItem.id">{{statusItem.description}}</sc-checkbox>
+                <div class="marginButtonCheckbox"></div>
+                <sc-select label="Grupo de Alertas" formControlName="caseGroup" [items]="caseGroupItems" objectKey="id" placeholder="Grupo de alertas"></sc-select>
+                <p>Tipo de Alerta</p>
+                <sc-checkbox *ngFor="let caseType of caseTypeItems" [formControlName]="'caseType'+caseType.id">{{caseType.description}}</sc-checkbox>
+            </form>
+        </sc-filter-box>    
+
+        <sc-button  class="padding-05" type="secondary" (onClick)="reOrder()">Ordenar por vencimiento</sc-button>
+        <sc-button  class="padding-05" type="secondary" (onClick)="modalExport.open()">Exportar</sc-button>
+    </div>
+    <div>
+        <sc-grid class="margin-top" [settings]="settings" [source]="cases" summary="Listado de casos" (columnSorted)="handleSortedEvent($event)"></sc-grid>
+        <app-empty-data *ngIf="casesJson.length === 0"  [title]="'No se encontraron casos para esta unidad de negocio'"></app-empty-data>
+    </div>      
+    <sc-modal title="Exportar" #modalExport [closeButton]="false">
+        <p class="gradient sc-color-white"><b>Exportar Grilla</b></p>
+        <p>Seleccione el formato</p>
+        <div class="flex-container">
+        <sc-button type="secondary" class="padding-05" (onClick)="gridExport('CSV')">CSV</sc-button>
+        <sc-button type="secondary" class="padding-05" (onClick)="gridExport('XLS')">XLS</sc-button>
+        <sc-button type="secondary" class="padding-05" (onClick)="modalExport.close()">Cancelar</sc-button>
+        </div>
+    </sc-modal>
+</div>

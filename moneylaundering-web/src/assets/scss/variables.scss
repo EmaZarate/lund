@@ -1,0 +1,4 @@
+@import "@sc/portal.fe.lib.global-styles/src/_globals.scss";
+
+$mobile-main-content-padding: map-get($spacers, 1);
+$desktop-main-content-padding: map-get($spacers, 2);

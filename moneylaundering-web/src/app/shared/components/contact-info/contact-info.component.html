@@ -1,0 +1,51 @@
+<div class="margin-top">
+    <sc-title type="h3" class="sc-color-primary-brand" content="Información de contacto"></sc-title>
+    <form [formGroup]="form" novalidate>
+        <div class="flex-container">
+            <div class="flex-column-50 margin-top padding-right-2">
+                <sc-title type="h3" content="Email"></sc-title>
+                <sc-input 
+                    [readonly]="isReadOnly"
+                    [placeholder]="'Correo electrónico del productor o sucursal'" 
+                    formControlName="productorEmail">
+                </sc-input>
+            </div>
+            <div class="flex-column-50 margin-top padding-left-2">
+                <sc-title type="h3" content="Dirección"></sc-title>
+                <sc-input 
+                    [readonly]="isReadOnly"    
+                    [placeholder]="'Dirección de la persona'" 
+                    formControlName="personAddress">
+                </sc-input>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-column-50 margin-top padding-right-2">
+                <sc-title type="h3" content="Provincia"></sc-title>
+                <sc-select
+                    *ngIf="statesAsync$"
+                    formControlName="personProvince" 
+                    [itemsAsync$]="statesAsync$" 
+                    [isReadonly]="isReadOnly"    
+                    [objectKey]="'stateId'"
+                    [objectValue]="'description'" 
+                    [placeholder]="'Seleccione una provincia'"
+                    (optionSelected)="onOptionChange($event)">
+                </sc-select>
+            </div>
+            <div class="flex-column-50 margin-top padding-left-2">
+                <sc-title type="h3" content="Localidad"></sc-title>
+                <sc-select 
+                    *ngIf="locationAsync$"
+                    formControlName="personCity" 
+                    [itemsAsync$]="locationAsync$"
+                    [isReadonly]="isReadOnly"    
+                    [isDisabled]="!locationAsync$"
+                    [objectKey]="'locationId'" 
+                    [objectValue]="'locationAndZipCode'" 
+                    [placeholder]="'Seleccione una localidad'">
+                </sc-select>
+            </div>
+        </div>
+    </form>
+</div>

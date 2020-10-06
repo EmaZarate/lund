@@ -1,0 +1,73 @@
+<div class="padding-1">
+    <app-title-component [title]="'Administración de personas - Edición'"></app-title-component>
+    
+    <div class="flex-container margin-top">
+        <div class="flex-column-100">
+            <app-person *ngIf="person" [person]="person" [show]="false"></app-person>
+        </div>
+    </div>  
+    
+    <app-contact-info [isReadOnly]="true" *ngIf="contactInfo" [contactInfo]="contactInfo"></app-contact-info>
+
+    <div class="flex-container margin-top">
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Actividad"></sc-title>
+            <p>{{person?.activityId + "-" + activity }}</p>
+        
+        </div>
+        <div class="flex-column-33 padding-05">
+            <form [formGroup]="personForm" style="display: block;">
+                <sc-checkbox formControlName="checkboxObligatedSubject" [isReadOnly]="true" >Sujeto Obligado</sc-checkbox>
+                <sc-checkbox formControlName="checkboxUIF" [isReadOnly]="true">Inscripto en UIF</sc-checkbox>
+            </form>
+        </div>
+        <div class="flex-column-33 padding-05"></div>
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Tipo de Documento"></sc-title>
+            <p>{{person?.officialTypeId}}</p>
+        </div>
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Número de Documento"></sc-title>
+            <p>{{person?.taxId}}</p>
+        </div>
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Nacionalidad"></sc-title>
+            <p>{{person?.nationality}}</p>
+        </div>
+    </div>
+    
+    <div class="flex-container margin-top">
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Fecha de Nacimiento"></sc-title>
+            <p>{{dateFormat.format(person?.birthDate) !== '01/01/1' ? dateFormat.format(person?.birthDate): '' }}
+            </p>
+        </div>
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Estado Civil"></sc-title>
+            <p>{{person?.maritalstatus}}</p>
+        </div>
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Teléfono"></sc-title>
+            <p>{{person?.phoneNumber}}</p>
+        </div>
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Fecha de Registración"></sc-title>
+            <p>{{dateFormat.format(person?.registrationDate)!== '01/01/1' ?dateFormat.format(person?.registrationDate): '' }}
+            </p>
+        </div>
+        <div class="flex-column-33 padding-05">
+            <sc-title type="h3" content="Número de Registración"></sc-title>
+            <p>{{person?.registrationNumber}}</p>
+        </div>
+        <div class="flex-column-33 padding-05"></div>
+    </div>
+    <sc-grid [settings]="settings" [source]="personBusinessUnits"></sc-grid>
+    <app-document-attached-list *ngIf="documentAttached" [show]="true" [personID]="person.id" [documents]="documentAttached"></app-document-attached-list>
+    <div class="buttonsContainer margin-top-max">
+        <sc-button (onClick)="onCancel()" type="secondary">Volver</sc-button>
+    </div>
+</div>

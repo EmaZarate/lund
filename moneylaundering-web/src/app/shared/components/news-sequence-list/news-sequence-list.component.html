@@ -1,0 +1,30 @@
+<div class="margin-top">
+    
+    <div class="margin-top">
+        <sc-title type="h3" class="sc-color-primary-brand" content="Secuencia de Novedades"></sc-title>
+        <sc-grid *ngIf="news"  [settings]="settings" [source]="news" summary=""></sc-grid>
+        <p *ngIf="!news">No se encontraron novedades</p>
+    </div>
+    <div class="margin-top">
+        <form [formGroup]="form" novalidate>
+            <sc-title type="h3" class="sc-color-primary-brand" content="Motivo" *ngIf="hasNewsReasons" ></sc-title>
+            <div class="flex-container justify-left">
+                <div class="flex-column-50 margin-top">
+                    <sc-select
+                    *ngIf="reasonsAsync$"  
+                    [itemsAsync$]="reasonsAsync$"
+                    [objectKey]="'newsReasonTypeId'"
+                    [objectValue]="'description'"
+                    formControlName="reasons"
+                    (optionSelected)="onOptionChanged($event)"
+                    >
+                    </sc-select>
+                </div>
+            </div>
+            <div *ngIf="hasComments" >
+                <sc-title type="h3" class="sc-color-primary-brand" content="Observaciones"></sc-title>
+                <sc-textarea formControlName="observations"></sc-textarea>
+            </div>
+        </form>
+    </div>
+</div>

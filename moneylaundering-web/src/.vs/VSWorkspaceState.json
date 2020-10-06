@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\core",
+    "\\app\\main",
+    "\\app\\main\\analyst-assignment",
+    "\\app\\main\\analyst-assignment\\components",
+    "\\app\\main\\analyst-assignment\\components\\analyst-assignment-detail",
+    "\\app\\main\\case-management",
+    "\\app\\main\\person-management",
+    "\\assets"
+  ],
+  "SelectedNode": "\\app\\main\\analyst-assignment\\components\\analyst-assignment-detail\\analyst-assignment-detail.component.ts",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,919 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 79.0.3945 (Windows 10.0.0)" package="" timestamp="2020-03-03T12:37:18" id="0" hostname="MSTDVNB12" tests="14" errors="0" failures="6" time="1.829">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.130 Safari/537.36"/>
+  </properties>
+  <testcase name="SelectBusinessunitComponent should create" time="0.613" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).SelectBusinessunitComponent">
+    <failure type="">    &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [ERROR -&gt;][items]="businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [items]="businessunits" objectKey="id" objectValue="desc"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@1:10
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [ERROR -&gt;][items]="businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+    "): ng:///DynamicTestModule/SelectBusinessunitComponent.html@2:19
+Can't bind to 'errorMessages' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'errorMessages' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+            [ERROR -&gt;][errorMessages]="codeErrorMessages" placeholder="Seleccioná una unidad de negocio" label=""&gt;&#xD;
+       "): ng:///DynamicTestModule/SelectBusinessunitComponent.html@3:12
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-select [items]="businessunits" objectKey="id" objectValue="description" formControlName="business"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@2:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'formGroup' since it isn't a known property of 'form'. ("&lt;div class="container"&gt;&#xD;
+        &lt;sc-select [items]="businessunits" objectKey="id" objectValue="desc"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@1:10, Can't bind to 'items' since it isn't a known property of 'sc-select'.
+    "): ng:///DynamicTestModule/SelectBusinessunitComponen ...
+Error: Template parse errors:
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">    &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [ERROR -&gt;][items]="businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+Error: Template parse errors:
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [items]="businessunits" objectKey="id" objectValue="desc"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@1:10
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        &lt;sc-select [ERROR -&gt;][items]="businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+    "): ng:///DynamicTestModule/SelectBusinessunitComponent.html@2:19
+Can't bind to 'errorMessages' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'errorMessages' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("businessunits" objectKey="id" objectValue="description" formControlName="businessUnit"&#xD;
+            [ERROR -&gt;][errorMessages]="codeErrorMessages" placeholder="Seleccioná una unidad de negocio" label=""&gt;&#xD;
+       "): ng:///DynamicTestModule/SelectBusinessunitComponent.html@3:12
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container"&gt;&#xD;
+    &lt;form [formGroup]="formGroup"&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-select [items]="businessunits" objectKey="id" objectValue="description" formControlName="business"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@2:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'formGroup' since it isn't a known property of 'form'. ("&lt;div class="container"&gt;&#xD;
+        &lt;sc-select [items]="businessunits" objectKey="id" objectValue="desc"): ng:///DynamicTestModule/SelectBusinessunitComponent.html@1:10, Can't bind to 'items' since it isn't a known property of 'sc-select'.
+    "): ng:///DynamicTestModule/SelectBusinessunitComponen ...
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/shared/components/select-businessunit/select-businessunit.component.spec.ts:23:23)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:359:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:308:1)
+</failure>
+  </testcase>
+  <testcase name="CommonDataService should be created" time="0.055" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CommonDataService"/>
+  <testcase name="CaseManagementListComponent should create" time="0.256" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CaseManagementListComponent">
+    <failure type="">1. If 'sc-filter-box' is an Angular component and it has 'buttonId' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container margin-top"&gt;&#xD;
+    &lt;sc-filter-box [ERROR -&gt;][buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+1. If 'sc-filter-box' is an Angular component and it has 'count' input, then verify that it is part of this module.
+Can't bind to 'buttonId' since it isn't a known property of 'sc-filter-box'.
+1. If 'sc-filter-box' is an Angular component and it has 'buttonId' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container margin-top"&gt;&#xD;
+    &lt;sc-filter-box [ERROR -&gt;][buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;fo"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:19
+Can't bind to 'count' since it isn't a known property of 'sc-filter-box'.
+1. If 'sc-filter-box' is an Angular component and it has 'count' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("p"&gt;&#xD;
+    &lt;sc-filter-box [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [ERROR -&gt;][count]="0"&gt;&#xD;
+        &lt;form [formGroup]="caseForm"&gt;&#xD;
+            &lt;sc-input label="CUIT" placeholder=""): ng:///DynamicTestModule/CaseManagementListComponent.html@1:95
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("tonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;form [ERROR -&gt;][formGroup]="caseForm"&gt;&#xD;
+            &lt;sc-input label="CUIT" placeholder="CUIT" formControlName="cuit""): ng:///DynamicTestModule/CaseManagementListComponent.html@2:14
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;form [formGroup]="caseForm"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" &gt;&lt;/sc-input&gt;&#xD;
+          "): ng:///DynamicTestModule/CaseManagementListComponent.html@3:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Apellido Cliente" placeholder="Apellido Cliente" formControlName="surname" type="tex"): ng:///DynamicTestModule/CaseManagementListComponent.html@4:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("te" placeholder="Apellido Cliente" formControlName="surname" type="text"  &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Nombre Cliente" placeholder="Nombre Cliente" formControlName="firstname" type="text""): ng:///DynamicTestModule/CaseManagementListComponent.html@5:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("nte" placeholder="Nombre Cliente" formControlName="firstname" type="text" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Número de Caso" placeholder="Número de Caso" formControlName="case" type="number" &gt;&lt;"): ng:///DynamicTestModule/CaseManagementListComponent.html@6:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("case" type="number" &gt;&lt;/sc-input&gt;&#xD;
+            &lt;sc-select label="Analista" formControlName="analist" [ERROR -&gt;][items]="analistItems" objectKey="id" placeholder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select lab"): ng:///DynamicTestModule/CaseManagementListComponent.html@7:66
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("e Caso" placeholder="Número de Caso" formControlName="case" type="number" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Analista" formControlName="analist" [items]="analistItems" objectKey="id" placehold"): ng:///DynamicTestModule/CaseManagementListComponent.html@7:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("lder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Nivel de Riesgo" formControlName="risk" [ERROR -&gt;][items]="riskItems" objectKey="id" placeholder="Nivel de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select"): ng:///DynamicTestModule/CaseManagementListComponent.html@8:70
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("me="analist" [items]="analistItems" objectKey="id" placeholder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Nivel de Riesgo" formControlName="risk" [items]="riskItems" objectKey="id" placehol"): ng:///DynamicTestModule/CaseManagementListComponent.html@8:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Tipo de Estado" formControlName="stateType" [ERROR -&gt;][items]="stateTypeItems" objectKey="id" placeholder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-se"): ng:///DynamicTestModule/CaseManagementListComponent.html@9:74
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("e="risk" [items]="riskItems" objectKey="id" placeholder="Nivel de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Tipo de Estado" formControlName="stateType" [items]="stateTypeItems" objectKey="id""): ng:///DynamicTestModule/CaseManagementListComponent.html@9:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("holder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Estado" formControlName="state" [ERROR -&gt;][items]="stateItems" objectKey="id" placeholder="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label=""): ng:///DynamicTestModule/CaseManagementListComponent.html@10:62
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ype" [items]="stateTypeItems" objectKey="id" placeholder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Estado" formControlName="state" [items]="stateItems" objectKey="id" placeholder="Es"): ng:///DynamicTestModule/CaseManagementListComponent.html@10:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Grupo de Alertas" formControlName="caseGroup" [ERROR -&gt;][items]="caseGroupItems" objectKey="id" placeholder="Grupo de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-"): ng:///DynamicTestModule/CaseManagementListComponent.html@11:76
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("trolName="state" [items]="stateItems" objectKey="id" placeholder="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Grupo de Alertas" formControlName="caseGroup" [items]="caseGroupItems" objectKey="i"): ng:///DynamicTestModule/CaseManagementListComponent.html@11:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Tipo de Alerta" formControlName="caseType" [ERROR -&gt;][items]="caseTypeItems" objectKey="id" placeholder="Tipo de Alerta"&gt;&lt;/sc-select&gt;&#xD;
+        &lt;/form&gt;&#xD;
+  "): ng:///DynamicTestModule/CaseManagementListComponent.html@12:73
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("p" [items]="caseGroupItems" objectKey="id" placeholder="Grupo de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Tipo de Alerta" formControlName="caseType" [items]="caseTypeItems" objectKey="id" p"): ng:///DynamicTestModule/CaseManagementListComponent.html@12:12
+'sc-filter-box' is not a known element:
+1. If 'sc-filter-box' is an Angular component, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-filter-box [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:4
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/form&gt;&#xD;
+    &lt;/sc-filter-box&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+"): ng:///DynamicTestModule/CaseManagementListComponent.html@15:4
+Can't bind to 'settings' since it isn't a known property of 'sc-grid'.
+1. If 'sc-grid' is an Angular component and it has 'settings' input, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    &lt;sc-grid [ERROR -&gt;][settings]="settings" [source]="cases" summary="Listado de casos" (columnSorted)="handleSortedEvent($"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:13
+Can't bind to 'source' since it isn't a known property of 'sc-grid'.
+1. If 'sc-grid' is an Angular component and it has 'source' input, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    &lt;sc-grid [settings]="settings" [ERROR -&gt;][source]="cases" summary="Listado de casos" (columnSorted)="handleSortedEvent($event)"&gt;&lt;/sc-grid&gt;&#xD;
+&lt;/"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:35
+'sc-grid' is not a known element:
+1. If 'sc-grid' is an Angular component, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("itle type="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-grid [settings]="settings" [source]="cases" summary="Listado de casos" (columnSorted)="handleSort"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:4
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'buttonId' since it isn't a known property of 'sc-filter-box'.
+        &lt;fo"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:19, Can't bind to 'count' since it isn't a known property of 'sc-filter-box'.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgMo ...
+Error: Template parse errors:
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">1. If 'sc-filter-box' is an Angular component and it has 'buttonId' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container margin-top"&gt;&#xD;
+    &lt;sc-filter-box [ERROR -&gt;][buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+1. If 'sc-filter-box' is an Angular component and it has 'count' input, then verify that it is part of this module.
+Error: Template parse errors:
+Can't bind to 'buttonId' since it isn't a known property of 'sc-filter-box'.
+1. If 'sc-filter-box' is an Angular component and it has 'buttonId' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("&lt;div class="container margin-top"&gt;&#xD;
+    &lt;sc-filter-box [ERROR -&gt;][buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;fo"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:19
+Can't bind to 'count' since it isn't a known property of 'sc-filter-box'.
+1. If 'sc-filter-box' is an Angular component and it has 'count' input, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("p"&gt;&#xD;
+    &lt;sc-filter-box [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [ERROR -&gt;][count]="0"&gt;&#xD;
+        &lt;form [formGroup]="caseForm"&gt;&#xD;
+            &lt;sc-input label="CUIT" placeholder=""): ng:///DynamicTestModule/CaseManagementListComponent.html@1:95
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("tonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;form [ERROR -&gt;][formGroup]="caseForm"&gt;&#xD;
+            &lt;sc-input label="CUIT" placeholder="CUIT" formControlName="cuit""): ng:///DynamicTestModule/CaseManagementListComponent.html@2:14
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ters()" (delete)="deleteFilters()" [count]="0"&gt;&#xD;
+        &lt;form [formGroup]="caseForm"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" &gt;&lt;/sc-input&gt;&#xD;
+          "): ng:///DynamicTestModule/CaseManagementListComponent.html@3:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Apellido Cliente" placeholder="Apellido Cliente" formControlName="surname" type="tex"): ng:///DynamicTestModule/CaseManagementListComponent.html@4:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("te" placeholder="Apellido Cliente" formControlName="surname" type="text"  &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Nombre Cliente" placeholder="Nombre Cliente" formControlName="firstname" type="text""): ng:///DynamicTestModule/CaseManagementListComponent.html@5:12
+'sc-input' is not a known element:
+1. If 'sc-input' is an Angular component, then verify that it is part of this module.
+2. If 'sc-input' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("nte" placeholder="Nombre Cliente" formControlName="firstname" type="text" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-input label="Número de Caso" placeholder="Número de Caso" formControlName="case" type="number" &gt;&lt;"): ng:///DynamicTestModule/CaseManagementListComponent.html@6:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("case" type="number" &gt;&lt;/sc-input&gt;&#xD;
+            &lt;sc-select label="Analista" formControlName="analist" [ERROR -&gt;][items]="analistItems" objectKey="id" placeholder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select lab"): ng:///DynamicTestModule/CaseManagementListComponent.html@7:66
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("e Caso" placeholder="Número de Caso" formControlName="case" type="number" &gt;&lt;/sc-input&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Analista" formControlName="analist" [items]="analistItems" objectKey="id" placehold"): ng:///DynamicTestModule/CaseManagementListComponent.html@7:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("lder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Nivel de Riesgo" formControlName="risk" [ERROR -&gt;][items]="riskItems" objectKey="id" placeholder="Nivel de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select"): ng:///DynamicTestModule/CaseManagementListComponent.html@8:70
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("me="analist" [items]="analistItems" objectKey="id" placeholder="Analista"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Nivel de Riesgo" formControlName="risk" [items]="riskItems" objectKey="id" placehol"): ng:///DynamicTestModule/CaseManagementListComponent.html@8:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Tipo de Estado" formControlName="stateType" [ERROR -&gt;][items]="stateTypeItems" objectKey="id" placeholder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-se"): ng:///DynamicTestModule/CaseManagementListComponent.html@9:74
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("e="risk" [items]="riskItems" objectKey="id" placeholder="Nivel de Riesgo"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Tipo de Estado" formControlName="stateType" [items]="stateTypeItems" objectKey="id""): ng:///DynamicTestModule/CaseManagementListComponent.html@9:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("holder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Estado" formControlName="state" [ERROR -&gt;][items]="stateItems" objectKey="id" placeholder="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label=""): ng:///DynamicTestModule/CaseManagementListComponent.html@10:62
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ype" [items]="stateTypeItems" objectKey="id" placeholder="Tipo de Estado"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Estado" formControlName="state" [items]="stateItems" objectKey="id" placeholder="Es"): ng:///DynamicTestModule/CaseManagementListComponent.html@10:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Grupo de Alertas" formControlName="caseGroup" [ERROR -&gt;][items]="caseGroupItems" objectKey="id" placeholder="Grupo de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-"): ng:///DynamicTestModule/CaseManagementListComponent.html@11:76
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("trolName="state" [items]="stateItems" objectKey="id" placeholder="Estado"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Grupo de Alertas" formControlName="caseGroup" [items]="caseGroupItems" objectKey="i"): ng:///DynamicTestModule/CaseManagementListComponent.html@11:12
+Can't bind to 'items' since it isn't a known property of 'sc-select'.
+1. If 'sc-select' is an Angular component and it has 'items' input, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            &lt;sc-select label="Tipo de Alerta" formControlName="caseType" [ERROR -&gt;][items]="caseTypeItems" objectKey="id" placeholder="Tipo de Alerta"&gt;&lt;/sc-select&gt;&#xD;
+        &lt;/form&gt;&#xD;
+  "): ng:///DynamicTestModule/CaseManagementListComponent.html@12:73
+'sc-select' is not a known element:
+1. If 'sc-select' is an Angular component, then verify that it is part of this module.
+2. If 'sc-select' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("p" [items]="caseGroupItems" objectKey="id" placeholder="Grupo de alertas"&gt;&lt;/sc-select&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-select label="Tipo de Alerta" formControlName="caseType" [items]="caseTypeItems" objectKey="id" p"): ng:///DynamicTestModule/CaseManagementListComponent.html@12:12
+'sc-filter-box' is not a known element:
+1. If 'sc-filter-box' is an Angular component, then verify that it is part of this module.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-filter-box [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:4
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/form&gt;&#xD;
+    &lt;/sc-filter-box&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+"): ng:///DynamicTestModule/CaseManagementListComponent.html@15:4
+Can't bind to 'settings' since it isn't a known property of 'sc-grid'.
+1. If 'sc-grid' is an Angular component and it has 'settings' input, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    &lt;sc-grid [ERROR -&gt;][settings]="settings" [source]="cases" summary="Listado de casos" (columnSorted)="handleSortedEvent($"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:13
+Can't bind to 'source' since it isn't a known property of 'sc-grid'.
+1. If 'sc-grid' is an Angular component and it has 'source' input, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. ("primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    &lt;sc-grid [settings]="settings" [ERROR -&gt;][source]="cases" summary="Listado de casos" (columnSorted)="handleSortedEvent($event)"&gt;&lt;/sc-grid&gt;&#xD;
+&lt;/"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:35
+'sc-grid' is not a known element:
+1. If 'sc-grid' is an Angular component, then verify that it is part of this module.
+2. If 'sc-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("itle type="h2" class="sc-color-primary-brand" content="Listado de casos asignados"&gt;&lt;/sc-title&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-grid [settings]="settings" [source]="cases" summary="Listado de casos" (columnSorted)="handleSort"): ng:///DynamicTestModule/CaseManagementListComponent.html@16:4
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ Can't bind to 'buttonId' since it isn't a known property of 'sc-filter-box'.
+        &lt;fo"): ng:///DynamicTestModule/CaseManagementListComponent.html@1:19, Can't bind to 'count' since it isn't a known property of 'sc-filter-box'.
+2. If 'sc-filter-box' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgMo ...
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/main/case-management/components/case-management-list/case-management-list.component.spec.ts:23:23)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:359:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:308:1)
+</failure>
+  </testcase>
+  <testcase name="FullLayoutComponent should create" time="0.236" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).FullLayoutComponent"/>
+  <testcase name="FullLayoutComponent should disable the scroll when the menu is opened" time="0.096" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).FullLayoutComponent"/>
+  <testcase name="FullLayoutComponent should enable the scroll when the menu is closed" time="0.049" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).FullLayoutComponent"/>
+  <testcase name="PersonComponent should create" time="0.177" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).PersonComponent">
+    <failure type="">1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("[ERROR -&gt;]&lt;sc-title type="h3" content="Persona"&gt;&lt;/sc-title&gt;&#xD;
+&lt;div class="container box"&gt;&#xD;
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Identificación"&gt;&lt;/sc-title&gt;&#xD;
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("[ERROR -&gt;]&lt;sc-title type="h3" content="Persona"&gt;&lt;/sc-title&gt;&#xD;
+&lt;div class="container box"&gt;&#xD;
+    &lt;div class="flex-"): ng:///DynamicTestModule/PersonComponent.html@0:0
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Identificación"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }} - {{ person."): ng:///DynamicTestModule/PersonComponent.html@4:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="CUIT"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.cuit }}&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/PersonComponent.html@8:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Perfil Transaccional"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;5&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/PersonComponent.html@14:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Riesgo"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;Medio&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/PersonComponent.html@18:12
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("
+    &lt;/div&gt;&#xD;
+    &lt;div&gt;&#xD;
+        &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-"): ng:///DynamicTestModule/PersonComponent.html@23:14
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div&gt;&#xD;
+        &lt;form [formGroup]="formGroup"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox fo"): ng:///DynamicTestModule/PersonComponent.html@24:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&#xD;
+            &lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxPep"&gt;PEP&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formControlNam"): ng:///DynamicTestModule/PersonComponent.html@25:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxPep"&gt;PEP&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxTerrorist"&gt;Terrorista&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox f"): ng:///DynamicTestModule/PersonComponent.html@26:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+            &lt;sc-checkbox formControlName="checkboxTerrorist"&gt;Terrorista&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxThird"&gt;Tercero&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formCont"): ng:///DynamicTestModule/PersonComponent.html@27:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ckbox&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxThird"&gt;Tercero&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxGroup"&gt;Agrupador&lt;/sc-checkbox&gt;&#xD;
+        &lt;/form&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/PersonComponent.html@28:12
+'sc-button' is not a known element:
+1. If 'sc-button' is an Angular component, then verify that it is part of this module.
+2. If 'sc-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;/div&gt;&#xD;
+    &lt;div class="button"&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-button (onClick)="handleButtonClick()"&gt;Consultar detalles&lt;/sc-button&gt;&#xD;
+    &lt;/div&gt;&#xD;
+&lt;/div&gt;"): ng:///DynamicTestModule/PersonComponent.html@32:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'sc-title' is not a known element:
+    &lt;div class="flex-"): ng:///DynamicTestModule/PersonComponent.html@0:0, 'sc-title' is not a known element:
+            &lt;p&gt;{{ person.id }} - {{ person."): ng:///DynamicTestModule/PersonComponent.html@4:12 ...
+Error: Template parse errors:
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("[ERROR -&gt;]&lt;sc-title type="h3" content="Persona"&gt;&lt;/sc-title&gt;&#xD;
+&lt;div class="container box"&gt;&#xD;
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Identificación"&gt;&lt;/sc-title&gt;&#xD;
+Error: Template parse errors:
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("[ERROR -&gt;]&lt;sc-title type="h3" content="Persona"&gt;&lt;/sc-title&gt;&#xD;
+&lt;div class="container box"&gt;&#xD;
+    &lt;div class="flex-"): ng:///DynamicTestModule/PersonComponent.html@0:0
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Identificación"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }} - {{ person."): ng:///DynamicTestModule/PersonComponent.html@4:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="CUIT"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.cuit }}&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/PersonComponent.html@8:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Perfil Transaccional"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;5&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/PersonComponent.html@14:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Riesgo"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;Medio&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/PersonComponent.html@18:12
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("
+    &lt;/div&gt;&#xD;
+    &lt;div&gt;&#xD;
+        &lt;form [ERROR -&gt;][formGroup]="formGroup"&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-"): ng:///DynamicTestModule/PersonComponent.html@23:14
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div&gt;&#xD;
+        &lt;form [formGroup]="formGroup"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox fo"): ng:///DynamicTestModule/PersonComponent.html@24:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&#xD;
+            &lt;sc-checkbox formControlName="checkboxGreyList"&gt;Lista Gris&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxPep"&gt;PEP&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formControlNam"): ng:///DynamicTestModule/PersonComponent.html@25:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxPep"&gt;PEP&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxTerrorist"&gt;Terrorista&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox f"): ng:///DynamicTestModule/PersonComponent.html@26:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+            &lt;sc-checkbox formControlName="checkboxTerrorist"&gt;Terrorista&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxThird"&gt;Tercero&lt;/sc-checkbox&gt;&#xD;
+            &lt;sc-checkbox formCont"): ng:///DynamicTestModule/PersonComponent.html@27:12
+'sc-checkbox' is not a known element:
+1. If 'sc-checkbox' is an Angular component, then verify that it is part of this module.
+2. If 'sc-checkbox' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("ckbox&gt;&#xD;
+            &lt;sc-checkbox formControlName="checkboxThird"&gt;Tercero&lt;/sc-checkbox&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-checkbox formControlName="checkboxGroup"&gt;Agrupador&lt;/sc-checkbox&gt;&#xD;
+        &lt;/form&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/PersonComponent.html@28:12
+'sc-button' is not a known element:
+1. If 'sc-button' is an Angular component, then verify that it is part of this module.
+2. If 'sc-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;/div&gt;&#xD;
+    &lt;div class="button"&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-button (onClick)="handleButtonClick()"&gt;Consultar detalles&lt;/sc-button&gt;&#xD;
+    &lt;/div&gt;&#xD;
+&lt;/div&gt;"): ng:///DynamicTestModule/PersonComponent.html@32:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'sc-title' is not a known element:
+    &lt;div class="flex-"): ng:///DynamicTestModule/PersonComponent.html@0:0, 'sc-title' is not a known element:
+            &lt;p&gt;{{ person.id }} - {{ person."): ng:///DynamicTestModule/PersonComponent.html@4:12 ...
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/shared/components/person/person.component.spec.ts:23:23)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:359:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:308:1)
+</failure>
+  </testcase>
+  <testcase name="SelectBusinessuinitService should be created" time="0.028" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).SelectBusinessuinitService">
+    <failure type="">NullInjectorError: StaticInjectorError(DynamicTestModule)[HttpClient]: 
+  StaticInjectorError(Platform: core)[HttpClient]: 
+    NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ Function ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:855:1)
+    at resolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17514:1)
+    at tryResolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17440:1)
+    at StaticInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17266:1)
+    at resolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17514:1)
+    at tryResolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17440:1)
+    at StaticInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17266:1)
+    at resolveNgModuleDep (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30393:1)
+    at NgModuleRef_.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31578:1)
+    at injectInjectorOnly (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:734:1)
+</failure>
+  </testcase>
+  <testcase name="LoginComponent should be redirect to login" time="0.062" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should be redirect to login when  auth-token is not null" time="0.057" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should be call msft.login with auth-token is null" time="0.029" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).LoginComponent"/>
+  <testcase name="AnalystAssignmentDetailComponent should create" time="0.099" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).AnalystAssignmentDetailComponent">
+    <failure type="">1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Nuevo Caso"&gt;&lt;/sc-title&gt;&#xD;
+&#xD;
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Número"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }}&lt;/p&gt;&#xD;
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Nuevo Caso"&gt;&lt;/sc-title&gt;&#xD;
+&#xD;
+    &lt;div class"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@1:4
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Número"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }}&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@5:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Riesgo"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;Medio&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@9:12
+Can't bind to 'person' since it isn't a known property of 'app-person'.
+1. If 'app-person' is an Angular component and it has 'person' input, then verify that it is part of this module.
+2. If 'app-person' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            &lt;app-person [ERROR -&gt;][person]="person.person"&gt;&lt;/app-person&gt;&#xD;
+        &lt;/div&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@15:24
+'app-person' is not a known element:
+1. If 'app-person' is an Angular component, then verify that it is part of this module.
+2. If 'app-person' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            [ERROR -&gt;]&lt;app-person [person]="person.person"&gt;&lt;/app-person&gt;&#xD;
+        &lt;/div&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@15:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Canal"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;20-25.980.236-3&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@20:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Unidad de Negocio"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;3 - Retiro&lt;/p&gt;&#xD;
+        &lt;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@24:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Tipo de Alerta"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.caseType.descripti"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@30:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt; &#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Fecha"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.createDate | date:'dd/MM/yy"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@34:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Sucursal"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;1 - Casa Central&lt;/p&gt;&#xD;
+        &lt;/di"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@40:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Valoración"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.value }}&lt;/p&gt;&#xD;
+        "): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@44:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Datos adicionales del caso"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.commen"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@50:12
+'sc-button' is not a known element:
+1. If 'sc-button' is an Angular component, then verify that it is part of this module.
+2. If 'sc-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("utton"&gt;&#xD;
+        &lt;!-- &lt;button [routerLink]="['../../../analyst-assignment']"&gt;&lt;/button&gt; --&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-button (onClick)="handleButtonClick()"&gt;Volver&lt;/sc-button&gt;&#xD;
+    &lt;/div&gt;&#xD;
+&lt;/div&gt;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@56:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'sc-title' is not a known element:
+    &lt;div class"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@1:4, 'sc-title' is not a known element:
+        ...
+Error: Template parse errors:
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Nuevo Caso"&gt;&lt;/sc-title&gt;&#xD;
+&#xD;
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Número"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }}&lt;/p&gt;&#xD;
+Error: Template parse errors:
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("&lt;div class="container margin-top"&gt;&#xD;
+    [ERROR -&gt;]&lt;sc-title type="h2" class="sc-color-primary-brand" content="Nuevo Caso"&gt;&lt;/sc-title&gt;&#xD;
+&#xD;
+    &lt;div class"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@1:4
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Número"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.id }}&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@5:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Riesgo"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;Medio&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@9:12
+Can't bind to 'person' since it isn't a known property of 'app-person'.
+1. If 'app-person' is an Angular component and it has 'person' input, then verify that it is part of this module.
+2. If 'app-person' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (" class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            &lt;app-person [ERROR -&gt;][person]="person.person"&gt;&lt;/app-person&gt;&#xD;
+        &lt;/div&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@15:24
+'app-person' is not a known element:
+1. If 'app-person' is an Angular component, then verify that it is part of this module.
+2. If 'app-person' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            [ERROR -&gt;]&lt;app-person [person]="person.person"&gt;&lt;/app-person&gt;&#xD;
+        &lt;/div&gt;&#xD;
+    &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@15:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Canal"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;20-25.980.236-3&lt;/p&gt;&#xD;
+        &lt;/div&gt;&#xD;
+"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@20:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Unidad de Negocio"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;3 - Retiro&lt;/p&gt;&#xD;
+        &lt;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@24:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Tipo de Alerta"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.caseType.descripti"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@30:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt; &#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Fecha"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.createDate | date:'dd/MM/yy"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@34:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Sucursal"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;1 - Casa Central&lt;/p&gt;&#xD;
+        &lt;/di"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@40:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+        &lt;/div&gt;&#xD;
+        &lt;div class="flex-column-50"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Valoración"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.value }}&lt;/p&gt;&#xD;
+        "): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@44:12
+'sc-title' is not a known element:
+1. If 'sc-title' is an Angular component, then verify that it is part of this module.
+2. If 'sc-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("
+    &lt;div class="flex-container margin-top"&gt;&#xD;
+        &lt;div class="flex-column-100"&gt;&#xD;
+            [ERROR -&gt;]&lt;sc-title type="h3" content="Datos adicionales del caso"&gt;&lt;/sc-title&gt;&#xD;
+            &lt;p&gt;{{ person.commen"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@50:12
+'sc-button' is not a known element:
+1. If 'sc-button' is an Angular component, then verify that it is part of this module.
+2. If 'sc-button' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. ("utton"&gt;&#xD;
+        &lt;!-- &lt;button [routerLink]="['../../../analyst-assignment']"&gt;&lt;/button&gt; --&gt;&#xD;
+        [ERROR -&gt;]&lt;sc-button (onClick)="handleButtonClick()"&gt;Volver&lt;/sc-button&gt;&#xD;
+    &lt;/div&gt;&#xD;
+&lt;/div&gt;"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@56:8
+error properties: Object({ ngSyntaxError: true, ngParseErrors: [ 'sc-title' is not a known element:
+    &lt;div class"): ng:///DynamicTestModule/AnalystAssignmentDetailComponent.html@1:4, 'sc-title' is not a known element:
+        ...
+    at syntaxError (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2175:1)
+    at TemplateParser.parse (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:11388:1)
+    at JitCompiler._parseTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25963:1)
+    at JitCompiler._compileTemplate (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25951:61)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1
+    at &lt;Jasmine&gt;
+    at JitCompiler._compileComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25895:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25815:1
+    at Object.then (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:2166:27)
+    at JitCompiler._compileModuleAndAllComponents (http://localhost:9876/_karma_webpack_/node_modules/@angular/compiler/fesm2015/compiler.js:25813:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/src/app/main/analyst-assignment/components/analyst-assignment-detail/analyst-assignment-detail.component.spec.ts:23:23)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:359:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:308:1)
+</failure>
+  </testcase>
+  <testcase name="CaseManagementService should be created" time="0.028" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).CaseManagementService">
+    <failure type="">NullInjectorError: StaticInjectorError(DynamicTestModule)[HttpClient]: 
+  StaticInjectorError(Platform: core)[HttpClient]: 
+    NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ Function ] })
+    at &lt;Jasmine&gt;
+    at NullInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:855:1)
+    at resolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17514:1)
+    at tryResolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17440:1)
+    at StaticInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17266:1)
+    at resolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17514:1)
+    at tryResolveToken (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17440:1)
+    at StaticInjector.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:17266:1)
+    at resolveNgModuleDep (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:30393:1)
+    at NgModuleRef_.get (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:31578:1)
+    at injectInjectorOnly (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/fesm2015/core.js:734:1)
+</failure>
+  </testcase>
+  <testcase name="ErrorLoginComponent should redirect login" time="0.044" classname="HeadlessChrome_79_0_3945_(Windows_10_0_0).ErrorLoginComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,14 @@
+<div class="padding-1">
+    <app-title-component [title]="'Asignación de analista - Detalle - Nuevo caso'"></app-title-component>
+    <app-generic-data-risk *ngIf="case" [case]="case"></app-generic-data-risk>
+    <div class="flex-container margin-top">
+        <div class="flex-column-100">
+            <app-person *ngIf="person" [person]="person" [case]="case" [navigateUrl]="navigateUrl"></app-person>
+        </div>
+    </div>
+    <app-generic-data-case *ngIf="case" [case]="case">
+    </app-generic-data-case>
+    <div class="button">
+        <sc-button type="secondary" (onClick)="handleButtonClick()">Volver</sc-button>
+    </div>
+</div>

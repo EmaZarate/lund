@@ -1,0 +1,10 @@
+
+<div class="padding-1">
+    <sc-title type="h3" class="sc-color-primary-brand" content="Documentos Sin Vincular"></sc-title>
+    <sc-grid class="margin-top" *ngIf="documents" [settings]="settings" [source]="documents" summary="Listado de documentos sin asignar"></sc-grid>
+    <app-empty-data *ngIf="documentsList.length === 0" [title]="'No se encontraron documentos sin vincular'">
+    </app-empty-data>
+    <div class="container-bottom">
+       <sc-button class="margin-buttom" type="secondary" (onClick)="back()">Volver</sc-button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+@import "@sc/portal.fe.lib.global-styles/src/_globals.scss";
+
+.toast-info {
+  background-color: $primary-brand-light;
+  position: relative;
+  background-image: none;
+  &::before {
+    content: "";
+    $width: 25px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    display: block;
+    width: $width;
+    height: $width;
+    border: 3px solid rgba(137,147,164,.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: rotating 1s infinite linear;
+  }
+}
+@keyframes rotating {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.toast-error {
+  background-color: $secondary-red-light;
+}

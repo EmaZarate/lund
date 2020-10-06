@@ -1,0 +1,44 @@
+<div class="flex-container margin-top">     
+    <div class="flex-column-100">
+        <app-generic-data-case [case]="case"></app-generic-data-case>
+    </div>
+    
+    
+</div>
+<div class="flex-container margin-top">     
+    <div class="flex-column-50">
+        <sc-title type="h3" content="ID"></sc-title>
+        <p>{{news.id}}</p>
+    </div>
+    <div class="flex-column-50">
+        <sc-title type="h3" content="Fecha de creación"></sc-title>
+        <p>{{news.createDate |  date: 'dd/MM/yyyy'}}</p>
+    </div>
+    
+</div>
+<div class="flex-container margin-top">     
+    <div class="flex-column-50">
+        <sc-title type="h3" content="Tipo"></sc-title>
+        <p>{{news.newsTypeDescription}}</p>
+    </div>
+    <div class="flex-column-50">
+        <sc-title type="h3" content="Estado"></sc-title>
+        <p>{{news.statusDescription}}</p>
+    </div>
+    
+</div>
+<div class="flex-container margin-top">     
+    <div class="flex-column-50">
+        <sc-title type="h3" content="Motivo"></sc-title>
+        <p>{{newsReasonTypeDesc}}</p>
+    </div>
+    <div class="flex-column-50">       
+    </div>
+</div>
+
+<div class="flex-container margin-top">     
+<div class="flex-column-100">
+    <sc-title type="h3" content="Observaciones"></sc-title>
+    <p>{{news.comments}}</p>
+</div>
+</div>

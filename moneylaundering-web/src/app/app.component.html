@@ -1,0 +1,4 @@
+<div [ngClass]="{'displayNone' : isLoading}">
+    <router-outlet></router-outlet>
+</div>
+<app-loading [ngClass]="{'displayNone' : !isLoading}"></app-loading>

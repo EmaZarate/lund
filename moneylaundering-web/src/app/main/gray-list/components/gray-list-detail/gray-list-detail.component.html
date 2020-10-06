@@ -1,0 +1,96 @@
+<div class="padding-1">
+    <app-title-component [title]="title"></app-title-component>
+    <form [formGroup]="form" novalidate>
+        <div *ngIf="isNewGrayList" >
+            <div class="margin-top">
+                <sc-title type="h3" content="Filtrar personas"></sc-title>
+            </div>
+            <div class="flex-container justify-left">
+                <div class="flex-column-33 margin-top padding-right-2">
+                    <sc-input  
+                    [placeholder]="'Nombre'" 
+                    formControlName="firstName">
+                    </sc-input>
+                </div>
+                <div class="flex-column-33 margin-top padding-right-2">
+                    <sc-input  
+                    [placeholder]="'Apellido'" 
+                    formControlName="lastName">
+                    </sc-input>
+                </div>
+                <div style="align-self: flex-end;margin-bottom: 5px;">
+                    <sc-button type="secondary" (onClick)="onSearch()">Buscar</sc-button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-column-50 margin-top padding-right-2">
+                <sc-title type="h3" content="Código"></sc-title>
+                <sc-input  
+                    [readonly]="true"
+                    [placeholder]="'Código de persona en lista gris'" 
+                    formControlName="id">
+                </sc-input>
+            </div>
+            <div class="flex-column-50 margin-top padding-left-2">
+                <sc-title type="h3" content="Cliente"></sc-title>
+                <sc-select 
+                    *ngIf="grayListPerson && (isEditing || isReadOnly)"
+                    formControlName="person"
+                    [itemsAsync$]="grayListPerson"
+                    [objectKey]="'id'"
+                    [objectValue]="'fullName'"
+                    [isDisabled]="!isNewGrayList || !hadFilter"
+                    (optionSelected)="onPersonSelected($event)"
+                    >
+                </sc-select>
+                <sc-select 
+                    *ngIf="grayListPerson && (!isEditing && !isReadOnly)"
+                    [enableSearch]="true"
+                    formControlName="person"
+                    [items]="grayListPerson"
+                    [objectKey]="'id'"
+                    [objectValue]="'fullName'"
+                    [isDisabled]="!isNewGrayList || !hadFilter"
+                    (optionSelected)="onPersonSelected($event)"
+                    >
+                </sc-select>
+                <!-- If grayListPerson is empty-->
+                <sc-select 
+                    *ngIf="!grayListPerson"
+                    formControlName="person"
+                    [isDisabled]="!isNewGrayList || !hadFilter"
+                    >
+                </sc-select>
+                <!-- // // // -->
+            </div>
+        </div>
+        <div class="flex-column-100 margin-top">
+            <sc-title type="h3" content="Comentarios"></sc-title>
+            <sc-textarea  
+                [readonly]="isReadOnly"
+                [placeholder]="'Ingrese un nuevo comentario'" 
+                formControlName="comment"
+                >
+            </sc-textarea>
+        </div>
+    </form>
+    <app-document-attached-list 
+        *ngIf="person && documents" 
+        [documents]="documents" 
+        [personID]="person.value.id"
+        (onNewDocument)="onNewDocument($event)"
+        (onDelete)="onDeletedDocument($event)"
+        >
+    </app-document-attached-list>
+    <div class="buttonsContainer margin-top-max">
+        <sc-button 
+            *ngIf="!isReadOnly" 
+            class="padding-right-1" 
+            (onClick)="submitInfo()" 
+            [disabled]="isDisable"
+            >Aceptar
+        </sc-button>
+        <sc-button type="secondary" (onClick)="navigateToList()">{{ isReadOnly ? 'Volver' : 'Cancelar' }}</sc-button>
+    </div>
+</div>

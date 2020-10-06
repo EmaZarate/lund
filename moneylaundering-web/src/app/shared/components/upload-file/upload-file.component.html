@@ -1,0 +1,33 @@
+<div>
+  <input type="file" #file style="display: none" (change)="onFilesAdded()" multiple />
+  <div *ngIf="(canUploadMulti || _attachments.length < 1)" class="evidences-icon-container file-container">
+    <span>{{title}}</span>
+    <i *ngIf="canUpload" class="material-icons add-file-icon" (click)="addFiles()" [matTooltipPosition]="'right'" matTooltip="Adjuntar archivo">add_circle</i>
+  </div>
+  <div *ngIf="canDownload || canDelete">
+    <div class="file-container" *ngFor="let oa of _oldAttachments">
+      <div class="row">
+        <div class="col-1">
+          <a *ngIf="canDownload" href="{{oa.url}}">
+            <i class="material-icons file-icon download-file-icon" matTooltip="Descargar">vertical_align_bottom</i>
+          </a>
+        </div>
+        <div class="col-2">
+          <i *ngIf="canDelete" class="material-icons file-icon delete-file-icon" (click)="deleteFiles(oa)"
+            matTooltip="Eliminar">delete</i>
+        </div>
+        <div class="col-9">
+          <p>{{oa.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="canUpload">
+    <div class="file-container" *ngFor="let na of _newAttachments">
+      <i class="material-icons file-icon remove-file-icon" (click)="removeFiles(na, _newAttachments)"
+        matTooltip="Eliminar" >remove_circle</i>
+      <span>{{na.name}}</span>
+    </div>
+  </div>
+</div>
+<button *ngIf="canSendData" (click)="onSaveChanges()">{{saveButtonText}}</button>

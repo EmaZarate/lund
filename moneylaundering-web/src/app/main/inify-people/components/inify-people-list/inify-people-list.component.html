@@ -1,0 +1,16 @@
+<div class="container margin-top">
+    <app-title-component class="margin-top" [title]="'Unificación de Personas'"></app-title-component><br/>
+    <sc-filter-box class="margin-buttom" [buttonId]="'idPrueba'" (apply)="applyFilters()" (delete)="deleteFilters()" [count]="0">
+        <form [formGroup]="form">
+            <sc-select label="Orden" placeholder="Orden" formControlName="orderId" [items]="order"></sc-select>
+             <br/><hr/><br/>
+            <sc-input label="Apellido" placeholder="Apellido" formControlName="surname" type="text"></sc-input>
+            <sc-input label="Nombre" placeholder="Nombre" formControlName="firstname" type="text" ></sc-input>
+            <sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="text" ></sc-input>
+        </form>
+
+    </sc-filter-box>
+    <sc-button class="padding-05" class="margin-buttom" type="secondary" (onClick)="newGroup()">Nuevo</sc-button>
+    <sc-grid class="rightAlignTDGridAC" class="margin-top" [settings]="settings" [source]="people" summary="Listado de Personas Agrupadoras" (columnSorted)="handleSortedEvent($event)"></sc-grid>
+    <app-empty-data *ngIf="peopleJson.length === 0"  [title]="'No hay unificaciones'"></app-empty-data>
+</div>

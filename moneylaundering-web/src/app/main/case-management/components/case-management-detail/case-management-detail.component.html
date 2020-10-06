@@ -1,0 +1,25 @@
+<div class="padding-1">
+    <app-title-component [title]="'Administración de casos - Detalle'"></app-title-component>
+    <app-generic-data-risk *ngIf="case" [case]="case"></app-generic-data-risk>
+    <div class="flex-container margin-top">
+        <div class="flex-column-100">
+            <app-person *ngIf="person" [person]="person" [case]="case" [navigateUrl]="navigateUrl"></app-person>
+        </div>
+    </div>
+    <app-generic-data-case *ngIf="case" [case]="case"></app-generic-data-case>
+    <app-document-attached-list *ngIf="person && case && documents" [showLink]="true" [caseID]="case.id" [personID]="person.id" [documents]="documents" [show]="false" [documentsList]="documentsList"></app-document-attached-list>
+    <app-docket [value]="docket" [isReadOnly]="true"></app-docket>
+    <app-contact-info 
+        *ngIf="contactInfo" 
+        [contactInfo]="contactInfo"
+        [locationAsync$]="locations"
+        [isReadOnly]="true"
+        >
+    </app-contact-info>
+    <div class="margin-top-max">
+        <app-news-sequence-list [news]="news" [hasComments]="false"></app-news-sequence-list>
+    </div>
+    <div class="button">
+        <sc-button type="secondary" (onClick)="handleButtonClick()">Volver</sc-button>
+    </div>
+</div>

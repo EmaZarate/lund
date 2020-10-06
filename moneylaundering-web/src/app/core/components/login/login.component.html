@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" class="flex-container">
+  <!-- <div > -->
+    <div class="size-container">
+      <img src="./assets/images/version-original-fondo-oscuro-horizontal.jpg" alt="">
+      <div class="action">
+        <span class="subtitle">
+          Prevención lavado de dinero
+        </span>
+        <sc-select objectKey="id" label="Unidad de Negocio" formControlName="businessUnit" [items]="businessUnitItems"
+          placeholder="Unidad de Negocio"></sc-select>
+        <sc-button class="margin-botton" [disabled]="!loginForm.valid" type="primary" (onClick)="ingresar()">Ingresar </sc-button>
+      </div>
+    </div>
+  <!-- </div> -->
+</form>

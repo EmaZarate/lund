@@ -1,0 +1,32 @@
+<app-loading *ngIf="!case"></app-loading>
+<div *ngIf="case">
+    <div class="container margin-top">
+        <app-title-component class="margin-top" [title]="'Recepción de información'"></app-title-component>
+        <app-generic-data-risk *ngIf="person && case" [case]="case"></app-generic-data-risk>
+        <app-person *ngIf="person" [case]="case" [person]="person"></app-person>
+        <app-generic-data-case *ngIf="case" [case]="case" [isNewCase]="false"></app-generic-data-case>
+        <app-document-attached-list 
+            *ngIf="documents" 
+            [caseID]="case.id" 
+            [personID]="person.id"
+            [showLink]="true"
+            [documents]="documents"
+            (onNewDocument)="onDocumentAttached($event)"
+            (onDelete)="onDocumentAttachedDeleted($event)"
+            >
+        </app-document-attached-list>
+        <app-docket [value]="docket" (isValidDocket)="onValidDocket($event)"></app-docket>
+        <app-contact-info 
+            *ngIf="contactInfo" 
+            [contactInfo]="contactInfo"
+            [locationAsync$]="locations"
+            (optionChanged)="onOptionChange($event)"
+            (isValidContactForm)="onValidContact($event)">
+        </app-contact-info>
+        <app-news-sequence-list *ngIf="news" (observation)="onChangeObservation($event) " [news]="news"></app-news-sequence-list>
+        <div class="buttonsContainer">
+            <sc-button class="padding-right-1" [disabled]="!isValid" (onClick)="onSave()">Aceptar</sc-button>
+            <sc-button type="secondary" (onClick)="onCancelClick()">Cancelar</sc-button>
+        </div>
+    </div>
+</div>

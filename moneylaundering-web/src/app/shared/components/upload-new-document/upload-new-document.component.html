@@ -1,0 +1,54 @@
+<div class="margin-top">
+    <sc-title type="h3" class="sc-color-primary-brand" content="Detalles de Documentos"></sc-title>
+    <form [formGroup]="newdocument">
+        <div class="flex-container">
+            <div class="flex-column-50 margin-top padding-right-2">
+                <sc-title type="h3" content="Archivo"></sc-title>
+                <app-upload-file (updatedAttachmentsEmitter)="getAttachments($event)"
+                    [_newAttachments]="_newAttachments" [_attachments]="_attachments" [canUploadMulti]="false">
+                </app-upload-file>
+            </div>
+            <div class="flex-column-50 margin-top padding-left-2">
+                <sc-title type="h3" content="Versión Actual"></sc-title>
+                <sc-input isDisabled="true" formControlName="versionActual"></sc-input>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-column-50 margin-top padding-right-2">
+                <sc-title type="h3" content="Nombre"></sc-title>
+                <sc-input formControlName="nombre" [readonly]="isNewVersion"></sc-input>
+            </div>
+            <div class="flex-column-50 margin-top padding-left-2">
+                <sc-title type="h3" content="Tipo:"></sc-title>
+                <!-- <sc-select formControlName="tipo" placeholder="Seleccione un tipo" [items]="types"
+                    [objectValue]="'description'" [objectKey]="'id'">
+                </sc-select> -->
+                <sc-select formControlName="tipo" [itemsAsync$]="types$" placeholder="Seleccioná un tipo"
+                    [objectValue]="'description'" [objectKey]="'id'">
+                </sc-select>
+            </div>
+        </div>
+        <div class="flex-column-50 margin-top padding-right-2">
+            <sc-title type="h3" content="Vencimiento:"></sc-title>
+            <mat-form-field class="flex-column-100">
+                <input matInput [matDatepicker]="picker" [min]="" formControlName="expiration">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="flex-column-100 margin-top">
+            <sc-title type="h3" content="Observaciones:"></sc-title>
+            <sc-textarea placeholder="" formControlName="observaciones">
+            </sc-textarea>
+        </div>
+        <div class="flex-column-100 margin-top">
+            <sc-checkbox formControlName="confidencial" [isReadOnly]="isCheckboxDisabled">Confidencial</sc-checkbox>
+        </div>
+        <div class="flex-column-100 margin-top">
+            <div class="buttonsContainer">
+                <sc-button class="padding-right-1" (onClick)="onSubmit()" [disabled]="!(newdocument.valid && _documents.length > 0)" >Grabar</sc-button>
+                <sc-button type="secondary" (onClick)="cancel()">Cancelar</sc-button>
+            </div>
+        </div>
+    </form>
+</div>

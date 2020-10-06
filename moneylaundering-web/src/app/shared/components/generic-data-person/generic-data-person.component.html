@@ -1,0 +1,51 @@
+<div class="container box">
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Identificación"></sc-title>
+            <p>{{ person.id }} - {{ person.firstName }} {{ person.lastName }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="CUIT"></sc-title>
+            <p>{{ person.cuit }}</p>
+        </div>
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Perfil Transaccional"></sc-title>
+            <p>{{ person.personBusinessUnits.length > 0 ? person.personBusinessUnits[0].financialProfile : '- - -'}}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Riesgo"></sc-title>  
+            <p>{{ person.personBusinessUnits.length > 0 ? person.personBusinessUnits[0].risk.description : '- - -'}}</p>
+        </div>
+    </div>
+    <div>
+        <form [formGroup]="formGroup">
+            <sc-checkbox formControlName="checkboxGreyList" [isReadOnly]="true">Lista Gris</sc-checkbox>
+            <sc-checkbox formControlName="checkboxPep" [isReadOnly]="true">PEP</sc-checkbox>
+            <sc-checkbox formControlName="checkboxTerrorist" [isReadOnly]="true">Terrorista</sc-checkbox>
+            <sc-checkbox formControlName="checkboxThird" [isReadOnly]="true">Tercero</sc-checkbox>
+            <sc-checkbox formControlName="checkboxGroup" [isReadOnly]="true">Agrupador</sc-checkbox>
+        </form>
+    </div>
+    <div class="flex-container margin-top">
+
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Información de Contacto"></sc-title>
+            <p>
+                <b>Mail:</b>&nbsp;{{ person.mail }} <br/>
+                <b>Dirección:</b>&nbsp;{{ person.address }} <br/>
+                <b>Provincia:</b>&nbsp;{{ 'Buenos Aires' }} <br/>
+                <b>Localidad:</b>&nbsp;{{ 'Caba' }} <br/>
+            </p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Actividad"></sc-title>  
+            <p>
+                <b>Tipo de Documento:</b>&nbsp;{{ person.mail }}&nbsp;<b>Número de Documento:</b>&nbsp;{{ person.cuit }}<br/>&nbsp;<b>Nacionalidad:</b>&nbsp;{{ person.cuit }}<br/>
+                <b>Nacimiento:</b>&nbsp;{{ person.mail }}&nbsp;<b>Estado Civil:</b>&nbsp;{{ person.cuit }}<br/>&nbsp;<b>Teléfono:</b>&nbsp;{{ person.cuit }}<br/>
+                <b>Fecha de Registración:</b>&nbsp;{{ person.mail }}&nbsp;<b>Número de Registración:</b>&nbsp;{{ person.cuit }}<br/>
+            </p>
+        </div>
+    </div>
+</div>

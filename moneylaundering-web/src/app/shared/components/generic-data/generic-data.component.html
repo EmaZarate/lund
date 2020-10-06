@@ -1,0 +1,35 @@
+<div class="padding-1">
+    <app-title-component [title]="title"></app-title-component>
+    <app-generic-data-risk [case]="case"></app-generic-data-risk>
+    <div class="flex-container margin-top">
+        <div class="flex-column-100">
+            <app-person [person]="person" *ngIf="person" ></app-person>
+        </div>
+    </div>
+    <app-generic-data-case 
+        [case]="case" 
+        [isNewCase]="isNewCase"
+        [isChangingExpiration]="isChangingExpiration" 
+        [isFalsePossitive]="isFalsePossitive" 
+        [isReAssigningAnalyst]="isReAssigningAnalyst"
+        (isValidCaseForm)="validateCaseForm($event)"
+        >
+    </app-generic-data-case>
+    <app-document-attached-list *ngIf="person && case && documents"  [personID]="person.id" [caseID]="case.id" [documents]="documents" [showLink]="true"></app-document-attached-list>
+    <app-contact-info 
+        *ngIf="contactInfo" 
+        [contactInfo]="contactInfo"
+        [locationAsync$]="locations"
+        [isReadOnly]="isReadOnly" 
+        (optionChanged)="onOptionChange($event)"
+        
+        (isValidContactForm)="validateContactForm($event)">
+    </app-contact-info>
+    <app-news-sequence-list 
+        [news]="news" 
+        [newsReason]="newsReason"
+        [hasNewsReasons]="hasNewsReasons"
+        (isValidNewsForm)="validateNewsForm($event)"
+        >
+    </app-news-sequence-list>
+</div>

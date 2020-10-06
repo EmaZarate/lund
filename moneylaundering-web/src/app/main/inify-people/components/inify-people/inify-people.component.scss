@@ -1,0 +1,26 @@
+@import "@sc/portal.fe.lib.global-styles/src/_globals.scss";
+
+.margin-buttom{
+    margin-right: 1.5%;
+}
+
+
+
+.container-flex{
+    display: flex;
+    margin: 3% 0 2% 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin: 3% 2% 0 0;
+}
+
+.searchBox{
+    width: 214px;
+    margin-top: 2.2%;
+}
+

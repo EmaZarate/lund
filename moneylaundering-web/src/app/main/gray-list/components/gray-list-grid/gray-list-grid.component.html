@@ -1,0 +1,35 @@
+<div class="padding-1">
+    <app-title-component [title]="'Lista gris'"></app-title-component>
+    <div class="flex-container justify-left margin-top" >
+        <sc-filter-box class="padding-05" [disabledApply]="disabledApply" (apply)="getFilteredList()" (delete)="gridFilterClear()">
+            <form [formGroup]="filterForm">
+                <div>
+                    <sc-input label="CUIT" placeholder="CUIT" formControlName="cuit" type="number"></sc-input>
+                </div>
+                <div class="margin-top">
+                    <sc-input label="Nombre" placeholder="Nombre" formControlName="fullName" type="text"></sc-input>
+                </div>
+                <div class="margin-top">
+                    <sc-radio-group formControlName="active">
+                        <sc-radio-item [value]="2">Activos</sc-radio-item>
+                        <sc-radio-item [value]="3">Inactivos</sc-radio-item>
+                        <sc-radio-item [value]="1">Todos</sc-radio-item>
+                    </sc-radio-group>
+                </div>
+            </form>
+        </sc-filter-box>
+        <sc-button class="padding-05" type="secondary" (onClick)="onNew()">Nuevo</sc-button>
+    </div>
+    <div class="margin-top">
+        <sc-grid [settings]="settings" [source]="grayListPerson" (columnSorted)="handleSortedEvent($event)"></sc-grid>
+        <app-empty-data 
+        *ngIf="grayListPersonArray.length == 0"  
+        [title]="'No se encontraron personas en lista gris'" 
+        [message]="'Modifique los filtros o ingrese nuevas personas'"
+        >
+        </app-empty-data>
+    </div>
+    <div class="margin-top">
+        <sc-pagination [rowsLength]="totalLength" [itemsPageOptions]="itemsPerPage" (paginationInfo)="onPageChange($event)"></sc-pagination>
+    </div>
+</div>

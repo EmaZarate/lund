@@ -1,0 +1,26 @@
+<div class="padding-1">
+    <app-title-component [title]="'Administración de Productores - Detalle'"></app-title-component>
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Código"></sc-title>
+            <p>{{ producer?.originCode }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Negocio"></sc-title>
+            <p>{{ producer?.businessUnit?.description }}</p>
+        </div>
+    </div>
+    <div class="flex-container margin-top">
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Nombre"></sc-title>
+            <p>{{ producer?.produceName }}</p>
+        </div>
+        <div class="flex-column-50">
+            <sc-title type="h3" content="Email"></sc-title>
+            <p>{{ producer?.mail }}</p>
+        </div>
+    </div>
+    <div class="button margin-top-button">
+        <sc-button type="secondary" (onClick)="back()">Volver</sc-button>
+    </div>
+</div>

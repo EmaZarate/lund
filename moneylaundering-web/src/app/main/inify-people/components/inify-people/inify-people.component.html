@@ -1,0 +1,29 @@
+<div class="margin-top container">
+    <form [formGroup]="form">
+        <app-title-component [title]="'Nueva Unificación'"></app-title-component>
+        <div class="container-flex">
+            <input placeholder="Persona Agrupadora" (change)="selectPersonGroup($event)" class="searchBox" type="text" list="personname" formControlName="groupPerson" #searchBox (input)="search(searchBox.value)">
+            <datalist id="personname" >
+                <option *ngFor="let personSearch of peopleResultSearch" [value]="personSearch.id+'-'+personSearch.lastName+' '+personSearch.firstName"></option>
+            </datalist>
+            <sc-input label="CUIT" isDisabled="true" formControlName="cuit"></sc-input>
+            <sc-input label="Unidad de Negocio Origen" isDisabled="true" formControlName="businessUnit"></sc-input>
+        </div>
+        <sc-button class="padding-05" class="margin-buttom" type="primary" (onClick)="add()" *ngIf="!readOnly">Agregar</sc-button>
+    </form>
+    <sc-grid class="rightAlignTDGridAC" class="margin-top" [settings]="settings" [source]="peopleGrid" summary="Duplicados"
+        (columnSorted)="handleSortedEvent($event)"></sc-grid>
+    <app-empty-data *ngIf="peopleGridJson.length === 0"  [title]="'No se encuentran personas  para este agrupador'"></app-empty-data>
+    <div class="container-bottom">
+        <sc-button class="margin-buttom" type="primary" (onClick)= "modalConfirm.open()" *ngIf="!readOnly" [disabled]="!(form.valid && inifyPeopleSercvice.addedPeople.length > 0)">Guardar</sc-button>
+        <sc-button class="margin-buttom" type="secondary" (onClick)="cancel()">{{readOnly ? 'Volver' : 'Cancelar'}}</sc-button>
+    </div>
+    <sc-modal title="Tomar Casos" #modalConfirm [closeButton]="false">
+        <p class="gradient sc-color-white"><b>Cuidado</b></p>
+        <p>Estos cambios no podrán ser revertidos. ¿Está seguro de realizar esta unificación de personas?</p>
+        <div class="flex-container">
+          <sc-button type="secondary" class="padding-05" (onClick)="submit()">Aceptar</sc-button>
+          <sc-button type="secondary" class="padding-05" (onClick)="modalConfirm.close()">Cancelar</sc-button>
+        </div>
+      </sc-modal>
+</div>
